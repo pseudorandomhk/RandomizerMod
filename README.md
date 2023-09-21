@@ -31,6 +31,8 @@ Baldur HP is reduced to 5 to make slower baldur kills less tedious, and to reduc
 - The lifeblood door in Abyss opens if you enter the room with a single lifeblood mask. In logic, it requires a lifeblood charm.
 - The randomizer adds extra platforms to various places that prevent softlocks. For example, there are several platforms added to Ancient Basin to prevent having to quit-out after checking certain locations without vertical movement. These platforms may disappear once the player has sufficient abilities to no longer need them.
 - If the player waits at the start location without waking up, the soul meter will be filled. This can be required at start locations which may not have soul. The player can return to start using the "Set Start" and "Warp" functions of Benchwarp.
+  - Warping to start after equipping charms at a bench may be required by the randomizer.
+  - Warping to start while carrying the Delicate Flower is not required by the randomizer to complete the Grey Mourner's quest.
 - With skips allowed, the player is advised to take care to not get locked out of certain required pogos. Obtain:
     - No more than 1 nail upgrade before claw or wings
     - No more than 3 nail upgrades before claw
@@ -48,6 +50,14 @@ Baldur HP is reduced to 5 to make slower baldur kills less tedious, and to reduc
 	- World_Sense and Lore_Tablet-World_Sense are both randomized. Then the World_Sense location does not exist, and two items are placed at Lore_Tablet-World_Sense.
 
 ## Settings
+
+There are many settings available to customize the randomizer, and even more settings can be added by installing connection mods, which integrate with the randomizer. Information about the types of settings included with the base randomizer can be found in the subsections below.
+
+Settings presets can be selected from the first menu page of the randomizer. To edit individual settings, click "More Randomizer Settings" in the bottom left for base randomizer settings, or "Connections" in the bottom left for connection mod settings.
+
+To manage settings and settings profiles, from the first menu page, click "More Randomizer Settings" in the bottom left, then "Manage Settings Profiles" in the bottom right of the next page. On this page, you can create a shareable code for the current settings, and save/load settings profiles.
+- Both the code and the settings profiles only modify base randomizer settings. Connection mod settings must be entered by hand. The code is linked to the randomizer version and will not be accepted if a different version of the mod is installed.
+- The RandoSettingsManager mod can be used to synchronize randomizer settings and most connection mod settings. Controls can again be found under "Manage Settings Profiles". Note that RandoSettingsManager codes require an internet connection to use, and may expire.
 
 ### Pool Settings
 
