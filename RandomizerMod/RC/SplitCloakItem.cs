@@ -77,5 +77,17 @@ namespace RandomizerMod.RC
             yield return LeftDashTerm;
             yield return RightDashTerm;
         }
+
+        public virtual bool Equals(SplitCloakItem other) => ReferenceEquals(this, other) ||
+            (base.Equals(other) && this.LeftBiased == other.LeftBiased && this.LeftDashTerm == other.LeftDashTerm && this.RightDashTerm == other.RightDashTerm);
+
+        public override int GetHashCode()
+        {
+            int hash = base.GetHashCode();
+            hash = (hash * 127) + LeftBiased.GetHashCode();
+            hash = (hash * 127) + LeftDashTerm.GetHashCode();
+            hash = (hash * 127) + RightDashTerm.GetHashCode();
+            return hash;
+        }
     }
 }

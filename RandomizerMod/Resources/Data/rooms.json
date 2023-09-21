@@ -84,11 +84,6 @@
     "MapArea": "Ancient Basin",
     "TitledArea": "Ancient Basin"
   },
-  "Abyss_22": {
-    "SceneName": "Abyss_22",
-    "MapArea": "Ancient Basin",
-    "TitledArea": "Palace Grounds"
-  },
   "Abyss_Lighthouse_room": {
     "SceneName": "Abyss_Lighthouse_room",
     "MapArea": "Ancient Basin",
@@ -159,11 +154,6 @@
     "MapArea": "City of Tears",
     "TitledArea": "City of Tears"
   },
-  "Ruins1_05c": {
-    "SceneName": "Ruins1_05c",
-    "MapArea": "City of Tears",
-    "TitledArea": "City of Tears"
-  },
   "Ruins1_06": {
     "SceneName": "Ruins1_06",
     "MapArea": "City of Tears",
@@ -224,11 +214,6 @@
     "MapArea": "City of Tears",
     "TitledArea": "City of Tears"
   },
-  "Ruins1_31b": {
-    "SceneName": "Ruins1_31b",
-    "MapArea": "City of Tears",
-    "TitledArea": "City of Tears"
-  },
   "Ruins1_32": {
     "SceneName": "Ruins1_32",
     "MapArea": "City of Tears",
@@ -246,11 +231,6 @@
   },
   "Ruins2_03": {
     "SceneName": "Ruins2_03",
-    "MapArea": "City of Tears",
-    "TitledArea": "City of Tears"
-  },
-  "Ruins2_03b": {
-    "SceneName": "Ruins2_03b",
     "MapArea": "City of Tears",
     "TitledArea": "City of Tears"
   },
@@ -291,11 +271,6 @@
   },
   "Ruins2_11": {
     "SceneName": "Ruins2_11",
-    "MapArea": "City of Tears",
-    "TitledArea": "Tower of Love"
-  },
-  "Ruins2_11_b": {
-    "SceneName": "Ruins2_11_b",
     "MapArea": "City of Tears",
     "TitledArea": "Tower of Love"
   },
@@ -489,11 +464,6 @@
     "MapArea": "Deepnest",
     "TitledArea": "Failed Tramway"
   },
-  "Deepnest_26b": {
-    "SceneName": "Deepnest_26b",
-    "MapArea": "Deepnest",
-    "TitledArea": "Failed Tramway"
-  },
   "Deepnest_30": {
     "SceneName": "Deepnest_30",
     "MapArea": "Deepnest",
@@ -588,16 +558,6 @@
     "SceneName": "Room_spider_small",
     "MapArea": "Deepnest",
     "TitledArea": "Distant Village"
-  },
-  "Grimm_Divine": {
-    "SceneName": "Grimm_Divine",
-    "MapArea": "Dirtmouth",
-    "TitledArea": "Dirtmouth"
-  },
-  "Grimm_Main_Tent": {
-    "SceneName": "Grimm_Main_Tent",
-    "MapArea": "Dirtmouth",
-    "TitledArea": "Dirtmouth"
   },
   "Room_Bretta": {
     "SceneName": "Room_Bretta",
@@ -1289,11 +1249,6 @@
     "MapArea": "Howling Cliffs",
     "TitledArea": "Howling Cliffs"
   },
-  "Cliffs_06": {
-    "SceneName": "Cliffs_06",
-    "MapArea": "Howling Cliffs",
-    "TitledArea": "Howling Cliffs"
-  },
   "Fungus1_28": {
     "SceneName": "Fungus1_28",
     "MapArea": "Howling Cliffs",
@@ -1374,11 +1329,6 @@
     "MapArea": "Kingdom's Edge",
     "TitledArea": "Kingdom's Edge"
   },
-  "Deepnest_East_14b": {
-    "SceneName": "Deepnest_East_14b",
-    "MapArea": "Kingdom's Edge",
-    "TitledArea": "Kingdom's Edge"
-  },
   "Deepnest_East_15": {
     "SceneName": "Deepnest_East_15",
     "MapArea": "Kingdom's Edge",
@@ -1404,11 +1354,6 @@
     "MapArea": "Kingdom's Edge",
     "TitledArea": "Cast Off Shell"
   },
-  "GG_Lurker": {
-    "SceneName": "GG_Lurker",
-    "MapArea": "Kingdom's Edge",
-    "TitledArea": "Kingdom's Edge"
-  },
   "Hive_01": {
     "SceneName": "Hive_01",
     "MapArea": "Kingdom's Edge",
@@ -1421,11 +1366,6 @@
   },
   "Hive_03": {
     "SceneName": "Hive_03",
-    "MapArea": "Kingdom's Edge",
-    "TitledArea": "Hive"
-  },
-  "Hive_03_c": {
-    "SceneName": "Hive_03_c",
     "MapArea": "Kingdom's Edge",
     "TitledArea": "Hive"
   },
@@ -1639,21 +1579,6 @@
     "MapArea": "Royal Waterways",
     "TitledArea": "Royal Waterways"
   },
-  "GG_Pipeway": {
-    "SceneName": "GG_Pipeway",
-    "MapArea": "Royal Waterways",
-    "TitledArea": "Royal Waterways"
-  },
-  "GG_Waterways": {
-    "SceneName": "GG_Waterways",
-    "MapArea": "Royal Waterways",
-    "TitledArea": "Junk Pit"
-  },
-  "Room_GG_Shortcut": {
-    "SceneName": "Room_GG_Shortcut",
-    "MapArea": "Royal Waterways",
-    "TitledArea": "Junk Pit"
-  },
   "Waterways_01": {
     "SceneName": "Waterways_01",
     "MapArea": "Royal Waterways",
@@ -1798,25 +1723,5 @@
     "SceneName": "White_Palace_16",
     "MapArea": "White Palace",
     "TitledArea": "White Palace"
-  },
-  "White_Palace_17": {
-    "SceneName": "White_Palace_17",
-    "MapArea": "White Palace",
-    "TitledArea": "Path of Pain"
-  },
-  "White_Palace_18": {
-    "SceneName": "White_Palace_18",
-    "MapArea": "White Palace",
-    "TitledArea": "Path of Pain"
-  },
-  "White_Palace_19": {
-    "SceneName": "White_Palace_19",
-    "MapArea": "White Palace",
-    "TitledArea": "Path of Pain"
-  },
-  "White_Palace_20": {
-    "SceneName": "White_Palace_20",
-    "MapArea": "White Palace",
-    "TitledArea": "Path of Pain"
   }
 }

@@ -14,7 +14,6 @@
         public bool LevelOneSpells;
 
         public bool LevelTwoSpells;
-        public bool Grimmchild;
         public bool NailArts;
         public bool CursedNailItems;
         public bool DuplicateUniqueKeys;

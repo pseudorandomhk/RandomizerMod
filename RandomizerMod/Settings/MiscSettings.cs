@@ -5,8 +5,8 @@ namespace RandomizerMod.Settings
     public class MiscSettings : SettingsModule
     {
         public bool RandomizeNotchCosts;
-        [MenuRange(0, 240)][DynamicBound(nameof(MaxRandomNotchTotal), true)] public int MinRandomNotchTotal = 70;
-        [MenuRange(0, 240)][DynamicBound(nameof(MinRandomNotchTotal), false)] public int MaxRandomNotchTotal = 110;
+        [MenuRange(0, 240)][DynamicBound(nameof(MaxRandomNotchTotal), true)] public int MinRandomNotchTotal = 62;
+        [MenuRange(0, 240)][DynamicBound(nameof(MinRandomNotchTotal), false)] public int MaxRandomNotchTotal = 102;
         public bool ExtraPlatforms;
         public SalubraNotchesSetting SalubraNotches;
         public MaskShardType MaskShards;

@@ -45,8 +45,6 @@ namespace RandomizerMod.Settings
         [MenuRange(-1, 99)]
         public int LifebloodCocoons;
         [MenuRange(-1, 99)]
-        public int GrimmkinFlames;
-        [MenuRange(-1, 99)]
         public int JournalEntries;
         [MenuRange(-1, 99)]
         public int GeoRocks;

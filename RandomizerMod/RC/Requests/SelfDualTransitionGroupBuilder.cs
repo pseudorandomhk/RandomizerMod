@@ -20,8 +20,8 @@ namespace RandomizerMod.RC
             {
                 CoupledRandomizationGroup g = new()
                 {
-                    Items = ts.ToArray<IRandoItem>(),
-                    Locations = ts.ToArray<IRandoLocation>(),
+                    Items = ts.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = ts.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = label,
                     Strategy = strategy ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                     Validator = new WeakTransitionValidator(),
@@ -34,8 +34,8 @@ namespace RandomizerMod.RC
             {
                 RandomizationGroup g = new()
                 {
-                    Items = ts.ToArray<IRandoItem>(),
-                    Locations = ts.ToArray<IRandoLocation>(),
+                    Items = ts.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = ts.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = label,
                     Strategy = strategy ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                 };

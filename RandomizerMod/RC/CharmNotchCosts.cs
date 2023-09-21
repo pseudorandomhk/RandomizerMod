@@ -12,14 +12,14 @@
             if (min < 0 || min > max) throw new ArgumentOutOfRangeException(nameof(min));
 
             int count = rng.Next(min, max + 1);
-            int[] costs = new int[40];
+            int[] costs = new int[36];
 
             for (int i = 0; i < count; i++)
             {
                 int index;
                 do
                 {
-                    index = rng.Next(40);
+                    index = rng.Next(36);
                 }
                 while (costs[index] >= 6);
 
@@ -70,10 +70,6 @@
                 4,
                 3,
                 5,
-                1,
-                3,
-                2,
-                2
             };
 
         }

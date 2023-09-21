@@ -28,6 +28,9 @@ namespace RandomizerMod.RC
                 lmb.DeserializeJson(type, RandomizerMod.Assembly.GetManifestResourceStream($"RandomizerMod.Resources.Logic.{fileName}.json"));
             }
 
+            //foreach (var key in lmb.LogicLookup.Keys.ToList())
+            //    lmb.DoLogicEdit(new(key, "TRUE"));
+
             foreach (var a in _runtimeLogicOverrideOwner.GetSubscribers())
             {
                 try

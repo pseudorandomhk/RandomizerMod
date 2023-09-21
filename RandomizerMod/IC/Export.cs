@@ -30,10 +30,6 @@ namespace RandomizerMod.IC
             {
                 ItemChangerMod.Modules.Add<ItemChanger.Modules.NotchCostUI>();
             }
-            if (!gs.PoolSettings.GrimmkinFlames)
-            {
-                ItemChangerMod.Modules.Get<ItemChanger.Modules.InventoryTracker>().TrackGrimmkinFlames = false;
-            }
             if (gs.MiscSettings.SalubraNotches == MiscSettings.SalubraNotchesSetting.AutoGivenAtCharmThreshold)
             {
                 ItemChangerMod.Modules.Add<ItemChanger.Modules.AutoSalubraNotches>();
@@ -41,12 +37,6 @@ namespace RandomizerMod.IC
 
             HashSet<string> sourceNames = new(ctx.transitionPlacements.Select(x => x.Source.Name));
             HashSet<string> targetNames = new(ctx.transitionPlacements.Select(x => x.Target.Name));
-            if (targetNames.Contains($"{SceneNames.White_Palace_18}[top1]")
-                || targetNames.Contains($"{SceneNames.White_Palace_17}[right1]")
-                || targetNames.Contains($"{SceneNames.White_Palace_19}[top1]"))
-            {
-                ItemChangerMod.Modules.Add<ItemChanger.Modules.ReversePathOfPainSaw>();
-            }
 
             var pde = ItemChangerMod.Modules.GetOrAdd<ItemChanger.Modules.PlayerDataEditModule>();
 

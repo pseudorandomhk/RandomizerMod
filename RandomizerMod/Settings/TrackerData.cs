@@ -98,7 +98,7 @@ namespace RandomizerMod.Settings
 
             mu.AddWaypoints(lm.Waypoints);
             mu.AddTransitions(lm.TransitionLookup.Values);
-            mu.AddEntries(ctx.Vanilla.Select(v => new DelegateUpdateEntry(v.Location, pm =>
+            mu.AddEntries(ctx.Vanilla.Select(v => (UpdateEntry)new DelegateUpdateEntry(v.Location, pm =>
             {
                 AppendVanillaToDebug(v);
                 pm.Add(v.Item, v.Location);
@@ -107,8 +107,8 @@ namespace RandomizerMod.Settings
                     pm.Add(ilw.GetReachableEffect());
                 }
             })));
-            mu.AddEntries(ctx.itemPlacements.Select((p, id) => new DelegateUpdateEntry(p.Location.logic, OnCanGetLocation(id))));
-            mu.AddEntries(ctx.transitionPlacements.Select((p, id) => new DelegateUpdateEntry(p.Source, OnCanGetTransition(id))));
+            mu.AddEntries(ctx.itemPlacements.Select((p, id) => (UpdateEntry)new DelegateUpdateEntry(p.Location.logic, OnCanGetLocation(id))));
+            mu.AddEntries(ctx.transitionPlacements.Select((p, id) => (UpdateEntry)new DelegateUpdateEntry(p.Source, OnCanGetTransition(id))));
             mu.StartUpdating(); // automatically handle tracking reachable unobtained locations/transitions and adding vanilla progression to pm
 
             foreach (int i in obtainedItems)

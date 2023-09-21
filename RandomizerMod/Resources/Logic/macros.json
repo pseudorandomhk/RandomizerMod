@@ -1,4 +1,7 @@
 {
+  // marker for logic rework
+  "NOTHOUGHTSHEADEMPTY": "TRUE",
+
   // macros for modes
   "AREARANDO": "MAPAREARANDO | FULLAREARANDO",
   "NONRANDOMELEVATORS": "RANDOMELEVATORS=0",
@@ -10,14 +13,12 @@
 
   // macros for alternate item names
   "LOVE": "Love_Key",
-  "GRIMMCHILD": "$EQUIPPEDCHARM[Grimmchild]",
   "BRAND": "King's_Brand",
   "CYCLONE": "Cyclone_Slash",
   "GREATSLASH": "Great_Slash",
   "DASHSLASH": "Dash_Slash",
 
   // macros for basic skills
-  "DREAMGATE": "DREAMNAIL>1 + ESSENCE",
   "SUPERDASH": "LEFTSUPERDASH + RIGHTSUPERDASH",
   "ANYCLAW": "LEFTCLAW | RIGHTCLAW",
   "FULLCLAW": "LEFTCLAW + RIGHTCLAW",
@@ -43,12 +44,11 @@
   "SHADOWDASH": "FULLSHADOWDASH",
   "INFECTION": "DREAMER",
   "DREAMER3": "DREAMER>2",
-  "AWOKEN": "DREAMNAIL>2",
+  "AWOKEN": "DREAMNAIL>1",
 
   // macros for charms with the ability to equip
   "GLOWINGWOMB": "$EQUIPPEDCHARM[Glowing_Womb]",
   "GRUBBERFLYSELEGY": "$EQUIPPEDCHARM[Grubberfly's_Elegy]",
-  "WEAVERSONG": "$EQUIPPEDCHARM[Weaversong]",
   "SPORESHROOM": "$EQUIPPEDCHARM[Spore_Shroom]",
   "MARKOFPRIDE": "$EQUIPPEDCHARM[Mark_of_Pride]",
   "LONGNAIL": "$EQUIPPEDCHARM[Longnail]",
@@ -57,9 +57,6 @@
   "FRAGILEHEART": "$EQUIPPEDCHARM[Fragile_Heart]",
   "FRAGILEGREED": "$EQUIPPEDCHARM[Fragile_Greed]",
   "FRAGILESTRENGTH": "$EQUIPPEDCHARM[Fragile_Strength]",
-  "UHEART": "Fragile_Heart>1 + FRAGILEHEART",
-  "UGREED": "Fragile_Greed>1 + FRAGILEGREED",
-  "USTRENGTH": "Fragile_Strength>1 + FRAGILESTRENGTH",
   "DEFENDERSCREST": "$EQUIPPEDCHARM[Defender's_Crest]",
 
   "DASHMASTER": "$EQUIPPEDCHARM[Dashmaster]",
@@ -69,23 +66,20 @@
   "SHARPSHADOW": "FULLSHARPSHADOW",
   "KINGSOUL": "$EQUIPPEDCHARM[Kingsoul]",
   "VOIDHEART": "$EQUIPPEDCHARM[Void_Heart]",
-  "DASHSPRINT": "$EQUIPPEDCHARM[Dashmaster] + $EQUIPPEDCHARM[Sprintmaster]",
   "LIFEBLOOD": "$EQUIPPEDCHARM[Lifeblood_Heart] | $EQUIPPEDCHARM[Lifeblood_Core] | $EQUIPPEDCHARM[Joni's_Blessing]",
 
   // macros for simple comparisons
-  "6FLAMES": "FLAMES>5",
-  "3FLAMES": "FLAMES>2",
   "200ESSENCE": "ESSENCE>199",
   "SIMPLE1": "SIMPLE",
+  "SIMPLE2": "SIMPLE>1",
   "SIMPLE3": "SIMPLE>2",
-  "SIMPLE4": "SIMPLE>3",
-  "ALLSTAGS": "STAGS>8",
+  "ALLSTAGS": "STAGS>7",
 
   // deprecated mask comparisons for checking shade health
-  "2MASKS": "MASKSHARDS>7 | UHEART",
-  "3MASKS": "MASKSHARDS>11 | UHEART",
-  "4MASKS": "MASKSHARDS>15 | MASKSHARDS>7 + UHEART",
-  "6MASKS": "MASKSHARDS>23 | MASKSHARDS>15 + UHEART",
+  "2MASKS": "MASKSHARDS>7 | Can_Bench + FRAGILEHEART",
+  "3MASKS": "MASKSHARDS>11 | Can_Bench + FRAGILEHEART",
+  "4MASKS": "MASKSHARDS>15 | MASKSHARDS>7 + Can_Bench + FRAGILEHEART",
+  "6MASKS": "MASKSHARDS>23 | MASKSHARDS>15 + Can_Bench + FRAGILEHEART",
 
   // deprecated macros for the ability to take a certain number of hits. Due to inclusion of lifeblood, these cannot be used in nonterminal logic without the DGBENCH (or similar) requirement
   "2HITS": "MASKSHARDS>7 | Can_Bench + (FRAGILEHEART | Lifeblood_Heart + NOTCHES>$SafeNotchCost[8] | Lifeblood_Core | Joni's_Blessing + NOTCHES>$SafeNotchCost[27])",
@@ -93,30 +87,27 @@
   "4HITS": "MASKSHARDS>15 | MASKSHARDS>11 + Can_Bench + (Lifeblood_Core | Joni's_Blessing + NOTCHES>$SafeNotchCost[27]) | MASKSHARDS>7 + Can_Bench + (FRAGILEHEART + NOTCHES>$SafeNotchCost[23] | Lifeblood_Heart + NOTCHES>$SafeNotchCost[8] | Lifeblood_Core + NOTCHES>$SafeNotchCost[9])",
 
   // deprecated macros for the next nearest place where the player can move respawn, in nonterminal logic
-  "DGSHADESKIPS": "DREAMGATE + SHADESKIPS",
-  "ITEMSHADESKIPS": "ITEMRANDO + SHADESKIPS | DGSHADESKIPS",
-  "MAPAREASHADESKIPS": "(ITEMRANDO | MAPAREARANDO) + SHADESKIPS | DGSHADESKIPS",
-  "AREASHADESKIPS": "(ITEMRANDO | AREARANDO) + SHADESKIPS | DGSHADESKIPS",
+  "ITEMSHADESKIPS": "ITEMRANDO + SHADESKIPS",
+  "MAPAREASHADESKIPS": "(ITEMRANDO | MAPAREARANDO) + SHADESKIPS",
+  "AREASHADESKIPS": "(ITEMRANDO | AREARANDO) + SHADESKIPS",
   "ROOMSHADESKIPS": "SHADESKIPS",
   "TERMINALSHADESKIPS": "SHADESKIPS",
 
   // deprecated macros for the next nearest place where the player can refill soul, in nonterminal logic 
-  "DGSOUL": "DREAMGATE",
-  "ITEMSOUL": "ITEMRANDO | DGSOUL",
-  "MAPAREASOUL": "ITEMRANDO | MAPAREARANDO | DGSOUL",
-  "AREASOUL": "ITEMRANDO | AREARANDO | DGSOUL",
+  "ITEMSOUL": "ITEMRANDO",
+  "MAPAREASOUL": "ITEMRANDO | MAPAREARANDO",
+  "AREASOUL": "ITEMRANDO | AREARANDO",
   "ROOMSOUL": "ANY",
   "TERMINALSOUL": "ANY",
 
   // deprecated macros for the next nearest bench where the player can change charms, in nonterminal logic
-  "DGBENCH": "DREAMGATE",
-  "ITEMBENCH": "ITEMRANDO | DGBENCH",
-  "MAPAREABENCH": "ITEMRANDO | MAPAREARANDO | DGBENCH",
-  "AREABENCH": "ITEMRANDO | AREARANDO | DGBENCH",
+  "ITEMBENCH": "ITEMRANDO",
+  "MAPAREABENCH": "ITEMRANDO | MAPAREARANDO",
+  "AREABENCH": "ITEMRANDO | AREARANDO",
   "ROOMBENCH": "ANY",
 
   // macros for baldurs
-  "ALLBALDURS": "FIREBALL | QUAKE | GLOWINGWOMB | (WEAVERSONG | SPORESHROOM + FOCUS) + OBSCURESKIPS | CYCLONE + DIFFICULTSKIPS",
+  "ALLBALDURS": "FIREBALL | QUAKE | GLOWINGWOMB | (SPORESHROOM + FOCUS) + OBSCURESKIPS | CYCLONE + DIFFICULTSKIPS",
   "LEFTBALDURS": "ALLBALDURS | GRUBBERFLYSELEGY + LEFTSLASH | LEFTDASHSLASH | (MARKOFPRIDE + LEFTSLASH | LEFTDASH + LEFTSLASH) + DIFFICULTSKIPS",
   "RIGHTBALDURS": "ALLBALDURS | GRUBBERFLYSELEGY + RIGHTSLASH | RIGHTDASHSLASH | (MARKOFPRIDE + RIGHTSLASH | RIGHTDASH + RIGHTSLASH) + DIFFICULTSKIPS",
   "BALDURS": "LEFTBALDURS + RIGHTBALDURS",
@@ -144,10 +135,9 @@
   "BOSSFLUKE": "FIREBALL>1 | SCREAM>1 | SPELLS>1 + MILDCOMBATSKIPS | CURSED + (FIREBALL | SCREAM)",
 
   // macros for simple key requirements
-  "WATERWAYSUNLOCK": "SIMPLE4",
-  "PLEASUREHOUSEUNLOCK": "SIMPLE4",
-  "GODTUNERUNLOCK": "SIMPLE4",
-  "JIJIUNLOCK": "SIMPLE4",
+  "WATERWAYSUNLOCK": "SIMPLE3",
+  "PLEASUREHOUSEUNLOCK": "SIMPLE3",
+  "JIJIUNLOCK": "SIMPLE3",
 
   // macros for boss logic
   "COMBAT[Gruz_Mother]": "ANY",
@@ -168,10 +158,7 @@
   "COMBAT[Uumuu]": "AERIALMINIBOSS",
   "COMBAT[Nosk]": "BOSS",
   "COMBAT[Traitor_Lord]": "BOSS",
-  "COMBAT[Grimm]": "BOSS",
   "COMBAT[Collector]": "BOSS",
-  "COMBAT[Hive_Knight]": "BOSS",
-  "COMBAT[Pale_Lurker]": "BOSS",
   "COMBAT[Elder_Hu]": "AERIALMINIBOSS",
   "COMBAT[Xero]": "AERIALMINIBOSS",
   "COMBAT[Gorb]": "AERIALMINIBOSS",
@@ -182,15 +169,19 @@
   "COMBAT[Failed_Champion]": "BOSS",
   "COMBAT[Soul_Tyrant]": "BOSS",
   "COMBAT[Lost_Kin]": "BOSS",
-  "COMBAT[White_Defender]": "BOSS",
-  "COMBAT[Grey_Prince_Zote]": "BOSS",
   "COMBAT[Colosseum_1]": "BOSS + (FOCUS | SPICYCOMBATSKIPS)",
   "COMBAT[Colosseum_2]": "BOSS + (FOCUS | SPICYCOMBATSKIPS)",
   "COMBAT[West_Queen's_Gardens_Arena]": "MINIBOSS",
   "COMBAT[King's_Station_Arena]": "MINIBOSS",
   "COMBAT[White_Palace_Arenas]": "MINIBOSS",
-  "COMBAT[Path_of_Pain_Arena]": "BOSS",
   "COMBAT[Right_Devout]": "RIGHTSLASH | RIGHTSHADOWDASH | LEFTDASH",
   "COMBAT[Left_Devout]": "LEFTSLASH | LEFTSHADOWDASH | RIGHTDASH",
-  "COMBAT[Any_Devout]": "(LEFTSLASH | LEFTSHADOWDASH | RIGHTDASH) + (RIGHTSLASH | RIGHTSHADOWDASH | LEFTDASH)"
+  "COMBAT[Any_Devout]": "(LEFTSLASH | LEFTSHADOWDASH | RIGHTDASH) + (RIGHTSLASH | RIGHTSHADOWDASH | LEFTDASH)",
+
+  // macros for glitched movement
+  "PFLOAT": "FIREBALL",
+  "PFLOATDOWNDASH": "PFLOAT + DASHMASTER + ANYDASH",
+  "SLOWFLOAT": "FIREBALL | GREATSLASH",
+  "DIVEFLOAT": "QUAKE",
+  "DIVEFLOATDOWN": "QUAKE + GREATSLASH"
 }

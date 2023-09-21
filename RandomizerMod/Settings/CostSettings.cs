@@ -20,11 +20,11 @@ namespace RandomizerMod.Settings
 
 
         [DynamicBound(nameof(MaximumEssenceCost), true)]
-        [MenuRange(0, 2800)]
+        [MenuRange(0, 2200)]
         public int MinimumEssenceCost;
 
         [DynamicBound(nameof(MinimumEssenceCost), false)]
-        [MenuRange(0, 2800)]
+        [MenuRange(0, 2200)]
         public int MaximumEssenceCost;
 
         [MenuRange(0, 250)]
@@ -47,18 +47,18 @@ namespace RandomizerMod.Settings
 
 
         [DynamicBound(nameof(MaximumCharmCost), true)]
-        [MenuRange(0, 40)]
+        [MenuRange(0, 36)]
         public int MinimumCharmCost;
         
         [TriggerValidation(nameof(CharmTolerance))]
         [DynamicBound(nameof(MinimumCharmCost), false)]
-        [MenuRange(0, 40)]
+        [MenuRange(0, 36)]
         public int MaximumCharmCost;
         
         [DynamicBound(nameof(CharmToleranceUB), true)]
-        [MenuRange(0, 40)]
+        [MenuRange(0, 36)]
         public int CharmTolerance;
-        private int CharmToleranceUB => 40 - MaximumCharmCost;
+        private int CharmToleranceUB => 36 - MaximumCharmCost;
 
 
         public override void Clamp(GenerationSettings gs)
@@ -72,7 +72,7 @@ namespace RandomizerMod.Settings
             if (EggTolerance + MaximumEggCost > 20) EggTolerance = 20 - MaximumEggCost;
 
             if (MaximumCharmCost < MinimumCharmCost) MaximumCharmCost = MinimumCharmCost;
-            if (CharmTolerance + MaximumCharmCost > 40) CharmTolerance = 40 - MaximumCharmCost;
+            if (CharmTolerance + MaximumCharmCost > 36) CharmTolerance = 36 - MaximumCharmCost;
         }
     }
 }

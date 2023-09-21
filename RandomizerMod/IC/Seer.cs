@@ -34,7 +34,7 @@ namespace RandomizerMod.IC
             }
             if (gs.PoolSettings.Skills)
             {
-                sr |= SeerRewards.DreamGate | SeerRewards.AwokenDreamNail;
+                sr |= SeerRewards.AwokenDreamNail;
             }
             if (gs.PoolSettings.MaskShards)
             {

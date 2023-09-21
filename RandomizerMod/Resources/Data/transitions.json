@@ -24,7 +24,7 @@
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Tutorial_01[top2]": {
     "SceneName": "Tutorial_01",
@@ -69,7 +69,7 @@
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Town[door_station]": {
     "SceneName": "Town",
@@ -116,24 +116,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Town[room_divine]": {
-    "SceneName": "Town",
-    "DoorName": "room_divine",
-    "VanillaTarget": "Grimm_Divine[left1]",
-    "Direction": "Door",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Town[room_grimm]": {
-    "SceneName": "Town",
-    "DoorName": "room_grimm",
-    "VanillaTarget": "Grimm_Main_Tent[left1]",
-    "Direction": "Door",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Room_shop[left1]": {
     "SceneName": "Room_shop",
     "DoorName": "left1",
@@ -174,24 +156,6 @@
     "SceneName": "Room_Ouiji",
     "DoorName": "left1",
     "VanillaTarget": "Town[door_jiji]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Grimm_Divine[left1]": {
-    "SceneName": "Grimm_Divine",
-    "DoorName": "left1",
-    "VanillaTarget": "Town[room_divine]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Grimm_Main_Tent[left1]": {
-    "SceneName": "Grimm_Main_Tent",
-    "DoorName": "left1",
-    "VanillaTarget": "Town[room_grimm]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -2841,7 +2805,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Fungus2_30[top1]": {
     "SceneName": "Fungus2_30",
@@ -2913,7 +2877,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Deepnest_01[left1]": {
     "SceneName": "Deepnest_01",
@@ -2936,11 +2900,11 @@
   "Deepnest_01b[top2]": {
     "SceneName": "Deepnest_01b",
     "DoorName": "top2",
-    "VanillaTarget": null,
+    "VanillaTarget": "Deepnest_01[bot2]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Deepnest_01b[right1]": {
     "SceneName": "Deepnest_01b",
@@ -3206,11 +3170,11 @@
   "Fungus2_25[top2]": {
     "SceneName": "Fungus2_25",
     "DoorName": "top2",
-    "VanillaTarget": null,
+    "VanillaTarget": "Fungus2_30[bot1]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Fungus2_25[right1]": {
     "SceneName": "Fungus2_25",
@@ -3219,24 +3183,6 @@
     "Direction": "Right",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "Both"
-  },
-  "Deepnest_26[left1]": {
-    "SceneName": "Deepnest_26",
-    "DoorName": "left1",
-    "VanillaTarget": "Deepnest_26b[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Deepnest_26[left2]": {
-    "SceneName": "Deepnest_26",
-    "DoorName": "left2",
-    "VanillaTarget": "Deepnest_26b[right2]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
     "Sides": "Both"
   },
   "Deepnest_26[right1]": {
@@ -3254,24 +3200,6 @@
     "VanillaTarget": "Deepnest_35[top1]",
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Deepnest_26b[right2]": {
-    "SceneName": "Deepnest_26b",
-    "DoorName": "right2",
-    "VanillaTarget": "Deepnest_26[left2]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Deepnest_26b[right1]": {
-    "SceneName": "Deepnest_26b",
-    "DoorName": "right1",
-    "VanillaTarget": "Deepnest_26[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -3629,7 +3557,7 @@
   "Deepnest_East_01[right1]": {
     "SceneName": "Deepnest_East_01",
     "DoorName": "right1",
-    "VanillaTarget": "Hive_03_c[left1]",
+    "VanillaTarget": "Hive_03[left1]",
     "Direction": "Right",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
@@ -3710,11 +3638,11 @@
   "Deepnest_East_03[top2]": {
     "SceneName": "Deepnest_East_03",
     "DoorName": "top2",
-    "VanillaTarget": null,
+    "VanillaTarget": "Deepnest_East_07[bot2]",
     "Direction": "Top",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Deepnest_East_03[right1]": {
     "SceneName": "Deepnest_East_03",
@@ -3791,7 +3719,7 @@
   "Deepnest_East_06[bot1]": {
     "SceneName": "Deepnest_East_06",
     "DoorName": "bot1",
-    "VanillaTarget": "Deepnest_East_14b[top1]",
+    "VanillaTarget": "Deepnest_East_14[top1]",
     "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -3831,7 +3759,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Deepnest_East_07[left1]": {
     "SceneName": "Deepnest_East_07",
@@ -3845,7 +3773,7 @@
   "Deepnest_East_07[left2]": {
     "SceneName": "Deepnest_East_07",
     "DoorName": "left2",
-    "VanillaTarget": "Ruins2_11_b[right1]",
+    "VanillaTarget": "Ruins2_11[right1]",
     "Direction": "Left",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
@@ -3986,15 +3914,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Deepnest_East_14[left1]": {
-    "SceneName": "Deepnest_East_14",
-    "DoorName": "left1",
-    "VanillaTarget": "Deepnest_East_14b[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Deepnest_East_14[door1]": {
     "SceneName": "Deepnest_East_14",
     "DoorName": "door1",
@@ -4004,17 +3923,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Deepnest_East_14b[right1]": {
-    "SceneName": "Deepnest_East_14b",
-    "DoorName": "right1",
-    "VanillaTarget": "Deepnest_East_14[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Deepnest_East_14b[top1]": {
-    "SceneName": "Deepnest_East_14b",
+  "Deepnest_East_14[top1]": {
+    "SceneName": "Deepnest_East_14",
     "DoorName": "top1",
     "VanillaTarget": "Deepnest_East_06[bot1]",
     "Direction": "Top",
@@ -4121,15 +4031,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "GG_Lurker[left1]": {
-    "SceneName": "GG_Lurker",
-    "DoorName": "left1",
-    "VanillaTarget": "Room_Colosseum_Spectate[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Hive_01[left1]": {
     "SceneName": "Hive_01",
     "DoorName": "left1",
@@ -4160,7 +4061,7 @@
   "Hive_02[left1]": {
     "SceneName": "Hive_02",
     "DoorName": "left1",
-    "VanillaTarget": "Hive_03_c[right3]",
+    "VanillaTarget": "Hive_03[right3]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -4184,8 +4085,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Hive_03_c[left1]": {
-    "SceneName": "Hive_03_c",
+  "Hive_03[left1]": {
+    "SceneName": "Hive_03",
     "DoorName": "left1",
     "VanillaTarget": "Deepnest_East_01[right1]",
     "Direction": "Left",
@@ -4193,8 +4094,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Hive_03_c[right2]": {
-    "SceneName": "Hive_03_c",
+  "Hive_03[right2]": {
+    "SceneName": "Hive_03",
     "DoorName": "right2",
     "VanillaTarget": "Hive_04[left2]",
     "Direction": "Right",
@@ -4202,29 +4103,11 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Hive_03_c[right3]": {
-    "SceneName": "Hive_03_c",
+  "Hive_03[right3]": {
+    "SceneName": "Hive_03",
     "DoorName": "right3",
     "VanillaTarget": "Hive_02[left1]",
     "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Hive_03_c[top1]": {
-    "SceneName": "Hive_03_c",
-    "DoorName": "top1",
-    "VanillaTarget": "Hive_03[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Hive_03[bot1]": {
-    "SceneName": "Hive_03",
-    "DoorName": "bot1",
-    "VanillaTarget": "Hive_03_c[top1]",
-    "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
@@ -4259,7 +4142,7 @@
   "Hive_04[left2]": {
     "SceneName": "Hive_04",
     "DoorName": "left2",
-    "VanillaTarget": "Hive_03_c[right2]",
+    "VanillaTarget": "Hive_03[right2]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -4325,15 +4208,6 @@
     "VanillaTarget": "Room_Colosseum_02[top2]",
     "Direction": "Bot",
     "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Room_Colosseum_Spectate[right1]": {
-    "SceneName": "Room_Colosseum_Spectate",
-    "DoorName": "right1",
-    "VanillaTarget": "GG_Lurker[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -4496,15 +4370,6 @@
     "VanillaTarget": "Abyss_04[right1]",
     "Direction": "Left",
     "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Abyss_05[right1]": {
-    "SceneName": "Abyss_05",
-    "DoorName": "right1",
-    "VanillaTarget": "Abyss_22[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -4738,15 +4603,6 @@
     "DoorName": "right1",
     "VanillaTarget": "Abyss_19[left1]",
     "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Abyss_22[left1]": {
-    "SceneName": "Abyss_22",
-    "DoorName": "left1",
-    "VanillaTarget": "Abyss_05[right1]",
-    "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
@@ -5021,15 +4877,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Waterways_08[left2]": {
-    "SceneName": "Waterways_08",
-    "DoorName": "left2",
-    "VanillaTarget": "GG_Pipeway[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Waterways_09[right1]": {
     "SceneName": "Waterways_09",
     "DoorName": "right1",
@@ -5102,60 +4949,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "GG_Pipeway[right1]": {
-    "SceneName": "GG_Pipeway",
-    "DoorName": "right1",
-    "VanillaTarget": "Waterways_08[left2]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "GG_Pipeway[left1]": {
-    "SceneName": "GG_Pipeway",
-    "DoorName": "left1",
-    "VanillaTarget": "GG_Waterways[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "GG_Waterways[right1]": {
-    "SceneName": "GG_Waterways",
-    "DoorName": "right1",
-    "VanillaTarget": "GG_Pipeway[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "GG_Waterways[door1]": {
-    "SceneName": "GG_Waterways",
-    "DoorName": "door1",
-    "VanillaTarget": "Room_GG_Shortcut[left1]",
-    "Direction": "Door",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Room_GG_Shortcut[left1]": {
-    "SceneName": "Room_GG_Shortcut",
-    "DoorName": "left1",
-    "VanillaTarget": "GG_Waterways[door1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Room_GG_Shortcut[top1]": {
-    "SceneName": "Room_GG_Shortcut",
-    "DoorName": "top1",
-    "VanillaTarget": "Ruins1_04[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": true,
-    "Sides": "Both"
-  },
   "Ruins1_01[left1]": {
     "SceneName": "Ruins1_01",
     "DoorName": "left1",
@@ -5222,7 +5015,7 @@
   "Ruins1_03[right1]": {
     "SceneName": "Ruins1_03",
     "DoorName": "right1",
-    "VanillaTarget": "Ruins1_05c[left2]",
+    "VanillaTarget": "Ruins1_05[left2]",
     "Direction": "Right",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5255,15 +5048,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins1_04[bot1]": {
-    "SceneName": "Ruins1_04",
-    "DoorName": "bot1",
-    "VanillaTarget": "Room_GG_Shortcut[top1]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": true,
-    "Sides": "Both"
-  },
   "Ruins1_05b[left1]": {
     "SceneName": "Ruins1_05b",
     "DoorName": "left1",
@@ -5276,7 +5060,7 @@
   "Ruins1_05b[top1]": {
     "SceneName": "Ruins1_05b",
     "DoorName": "top1",
-    "VanillaTarget": "Ruins1_05c[bot1]",
+    "VanillaTarget": "Ruins1_05[bot1]",
     "Direction": "Top",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5300,8 +5084,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins1_05c[left2]": {
-    "SceneName": "Ruins1_05c",
+  "Ruins1_05[left2]": {
+    "SceneName": "Ruins1_05",
     "DoorName": "left2",
     "VanillaTarget": "Ruins1_03[right1]",
     "Direction": "Left",
@@ -5309,64 +5093,10 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins1_05c[bot1]": {
-    "SceneName": "Ruins1_05c",
-    "DoorName": "bot1",
-    "VanillaTarget": "Ruins1_05b[top1]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_05c[top1]": {
-    "SceneName": "Ruins1_05c",
-    "DoorName": "top1",
-    "VanillaTarget": "Ruins1_05[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_05c[top2]": {
-    "SceneName": "Ruins1_05c",
-    "DoorName": "top2",
-    "VanillaTarget": "Ruins1_05[bot2]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_05c[top3]": {
-    "SceneName": "Ruins1_05c",
-    "DoorName": "top3",
-    "VanillaTarget": "Ruins1_05[bot3]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Ruins1_05[bot1]": {
     "SceneName": "Ruins1_05",
     "DoorName": "bot1",
-    "VanillaTarget": "Ruins1_05c[top1]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_05[bot2]": {
-    "SceneName": "Ruins1_05",
-    "DoorName": "bot2",
-    "VanillaTarget": "Ruins1_05c[top2]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_05[bot3]": {
-    "SceneName": "Ruins1_05",
-    "DoorName": "bot3",
-    "VanillaTarget": "Ruins1_05c[top3]",
+    "VanillaTarget": "Ruins1_05b[top1]",
     "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5474,7 +5204,7 @@
   "Ruins1_18[right1]": {
     "SceneName": "Ruins1_18",
     "DoorName": "right1",
-    "VanillaTarget": "Ruins2_03b[left1]",
+    "VanillaTarget": "Ruins2_03[left1]",
     "Direction": "Right",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5609,7 +5339,7 @@
   "Ruins1_27[right1]": {
     "SceneName": "Ruins1_27",
     "DoorName": "right1",
-    "VanillaTarget": "Ruins2_01_b[left1]",
+    "VanillaTarget": "Ruins2_01[left2]",
     "Direction": "Right",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5705,48 +5435,12 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins1_31[left2]": {
-    "SceneName": "Ruins1_31",
-    "DoorName": "left2",
-    "VanillaTarget": "Ruins1_31b[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_31[left3]": {
-    "SceneName": "Ruins1_31",
-    "DoorName": "left3",
-    "VanillaTarget": "Ruins1_31b[right2]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Ruins1_31[right1]": {
     "SceneName": "Ruins1_31",
     "DoorName": "right1",
     "VanillaTarget": "Ruins1_23[left1]",
     "Direction": "Right",
     "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_31b[right1]": {
-    "SceneName": "Ruins1_31b",
-    "DoorName": "right1",
-    "VanillaTarget": "Ruins1_31[left2]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins1_31b[right2]": {
-    "SceneName": "Ruins1_31b",
-    "DoorName": "right2",
-    "VanillaTarget": "Ruins1_31[left3]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -5780,17 +5474,8 @@
   "Ruins2_01[top1]": {
     "SceneName": "Ruins2_01",
     "DoorName": "top1",
-    "VanillaTarget": "Ruins2_03b[bot1]",
+    "VanillaTarget": "Ruins2_03[bot1]",
     "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_01[bot1]": {
-    "SceneName": "Ruins2_01",
-    "DoorName": "bot1",
-    "VanillaTarget": "Ruins2_01_b[top1]",
-    "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
@@ -5804,26 +5489,17 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_01_b[top1]": {
-    "SceneName": "Ruins2_01_b",
-    "DoorName": "top1",
-    "VanillaTarget": "Ruins2_01[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_01_b[left1]": {
-    "SceneName": "Ruins2_01_b",
-    "DoorName": "left1",
+  "Ruins2_01[left2]": {
+    "SceneName": "Ruins2_01",
+    "DoorName": "left2",
     "VanillaTarget": "Ruins1_27[right1]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_01_b[right1]": {
-    "SceneName": "Ruins2_01_b",
+  "Ruins2_01[right1]": {
+    "SceneName": "Ruins2_01",
     "DoorName": "right1",
     "VanillaTarget": "Ruins2_04[left1]",
     "Direction": "Right",
@@ -5831,26 +5507,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_03b[top1]": {
-    "SceneName": "Ruins2_03b",
-    "DoorName": "top1",
-    "VanillaTarget": "Ruins2_03[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_03b[top2]": {
-    "SceneName": "Ruins2_03b",
-    "DoorName": "top2",
-    "VanillaTarget": "Ruins2_03[bot2]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_03b[left1]": {
-    "SceneName": "Ruins2_03b",
+  "Ruins2_03[left1]": {
+    "SceneName": "Ruins2_03",
     "DoorName": "left1",
     "VanillaTarget": "Ruins1_18[right1]",
     "Direction": "Left",
@@ -5858,8 +5516,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_03b[bot1]": {
-    "SceneName": "Ruins2_03b",
+  "Ruins2_03[bot1]": {
+    "SceneName": "Ruins2_03",
     "DoorName": "bot1",
     "VanillaTarget": "Ruins2_01[top1]",
     "Direction": "Bot",
@@ -5876,28 +5534,10 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_03[bot1]": {
-    "SceneName": "Ruins2_03",
-    "DoorName": "bot1",
-    "VanillaTarget": "Ruins2_03b[top1]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_03[bot2]": {
-    "SceneName": "Ruins2_03",
-    "DoorName": "bot2",
-    "VanillaTarget": "Ruins2_03b[top2]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Ruins2_04[left1]": {
     "SceneName": "Ruins2_04",
     "DoorName": "left1",
-    "VanillaTarget": "Ruins2_01_b[right1]",
+    "VanillaTarget": "Ruins2_01[right1]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -6059,7 +5699,7 @@
   "Ruins2_07[top1]": {
     "SceneName": "Ruins2_07",
     "DoorName": "top1",
-    "VanillaTarget": "Ruins2_11_b[bot1]",
+    "VanillaTarget": "Ruins2_11[bot1]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
@@ -6128,8 +5768,8 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_11_b[right1]": {
-    "SceneName": "Ruins2_11_b",
+  "Ruins2_11[right1]": {
+    "SceneName": "Ruins2_11",
     "DoorName": "right1",
     "VanillaTarget": "Deepnest_East_07[left2]",
     "Direction": "Right",
@@ -6137,30 +5777,12 @@
     "IsMapAreaTransition": true,
     "Sides": "Both"
   },
-  "Ruins2_11_b[left1]": {
-    "SceneName": "Ruins2_11_b",
-    "DoorName": "left1",
-    "VanillaTarget": "Ruins2_11[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_11_b[bot1]": {
-    "SceneName": "Ruins2_11_b",
+  "Ruins2_11[bot1]": {
+    "SceneName": "Ruins2_11",
     "DoorName": "bot1",
     "VanillaTarget": "Ruins2_07[top1]",
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Ruins2_11[right1]": {
-    "SceneName": "Ruins2_11",
-    "DoorName": "right1",
-    "VanillaTarget": "Ruins2_11_b[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -6275,11 +5897,11 @@
   "RestingGrounds_02[top1]": {
     "SceneName": "RestingGrounds_02",
     "DoorName": "top1",
-    "VanillaTarget": null,
+    "VanillaTarget": "Mines_28[bot1]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "RestingGrounds_04[left1]": {
     "SceneName": "RestingGrounds_04",
@@ -6743,11 +6365,11 @@
   "Mines_13[top1]": {
     "SceneName": "Mines_13",
     "DoorName": "top1",
-    "VanillaTarget": null,
+    "VanillaTarget": "Mines_34[left1]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Mines_13[bot1]": {
     "SceneName": "Mines_13",
@@ -6914,11 +6536,11 @@
   "Mines_23[top1]": {
     "SceneName": "Mines_23",
     "DoorName": "top1",
-    "VanillaTarget": null,
+    "VanillaTarget": "Mines_34[bot2]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayOut"
+    "Sides": "Both"
   },
   "Mines_24[left1]": {
     "SceneName": "Mines_24",
@@ -6963,7 +6585,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Mines_28[door1]": {
     "SceneName": "Mines_28",
@@ -7071,7 +6693,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Mines_34[left1]": {
     "SceneName": "Mines_34",
@@ -7080,7 +6702,7 @@
     "Direction": "Left",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Mines_35[left1]": {
     "SceneName": "Mines_35",
@@ -7514,15 +7136,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Cliffs_01[right4]": {
-    "SceneName": "Cliffs_01",
-    "DoorName": "right4",
-    "VanillaTarget": "Cliffs_06[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "Cliffs_02[right1]": {
     "SceneName": "Cliffs_02",
     "DoorName": "right1",
@@ -7530,7 +7143,7 @@
     "Direction": "Right",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Cliffs_02[bot1]": {
     "SceneName": "Cliffs_02",
@@ -7548,7 +7161,7 @@
     "Direction": "Bot",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
-    "Sides": "OneWayIn"
+    "Sides": "Both"
   },
   "Cliffs_02[door1]": {
     "SceneName": "Cliffs_02",
@@ -7608,15 +7221,6 @@
     "SceneName": "Cliffs_05",
     "DoorName": "left1",
     "VanillaTarget": "Cliffs_04[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "Cliffs_06[left1]": {
-    "SceneName": "Cliffs_06",
-    "DoorName": "left1",
-    "VanillaTarget": "Cliffs_01[right4]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -7763,15 +7367,6 @@
     "VanillaTarget": "White_Palace_16[left2]",
     "Direction": "Right",
     "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_06[left1]": {
-    "SceneName": "White_Palace_06",
-    "DoorName": "left1",
-    "VanillaTarget": "White_Palace_18[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": true,
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
@@ -7960,69 +7555,6 @@
     "DoorName": "left2",
     "VanillaTarget": "White_Palace_05[right2]",
     "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_17[right1]": {
-    "SceneName": "White_Palace_17",
-    "DoorName": "right1",
-    "VanillaTarget": "White_Palace_19[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_17[bot1]": {
-    "SceneName": "White_Palace_17",
-    "DoorName": "bot1",
-    "VanillaTarget": "White_Palace_18[top1]",
-    "Direction": "Bot",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_18[top1]": {
-    "SceneName": "White_Palace_18",
-    "DoorName": "top1",
-    "VanillaTarget": "White_Palace_17[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_18[right1]": {
-    "SceneName": "White_Palace_18",
-    "DoorName": "right1",
-    "VanillaTarget": "White_Palace_06[left1]",
-    "Direction": "Right",
-    "IsTitledAreaTransition": true,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_19[top1]": {
-    "SceneName": "White_Palace_19",
-    "DoorName": "top1",
-    "VanillaTarget": "White_Palace_20[bot1]",
-    "Direction": "Top",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_19[left1]": {
-    "SceneName": "White_Palace_19",
-    "DoorName": "left1",
-    "VanillaTarget": "White_Palace_17[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "White_Palace_20[bot1]": {
-    "SceneName": "White_Palace_20",
-    "DoorName": "bot1",
-    "VanillaTarget": "White_Palace_19[top1]",
-    "Direction": "Bot",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"

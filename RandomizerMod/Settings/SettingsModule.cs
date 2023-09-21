@@ -1,5 +1,6 @@
 ﻿using MenuChanger.Attributes;
 using System.Reflection;
+using static Shims.NET.System.Reflection.MemberInfo;
 
 namespace RandomizerMod.Settings
 {

@@ -19,7 +19,6 @@
         public bool Grubs;
         public bool LifebloodCocoons;
         public bool SoulTotems;
-        public bool GrimmkinFlames;
         public bool GeoRocks;
         public bool BossEssence;
         public bool BossGeo;

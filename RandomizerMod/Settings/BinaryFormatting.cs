@@ -2,6 +2,7 @@
 using System.Text;
 using System.Reflection;
 using MenuChanger.Attributes;
+using static Shims.NET.System.Reflection.MemberInfo;
 
 namespace RandomizerMod.Settings
 {

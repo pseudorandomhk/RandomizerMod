@@ -1,14 +1,16 @@
 ﻿using System.Collections.Concurrent;
 using System.Threading;
 using UnityEngine;
+using static Shims.NET.System.IO.DirectoryInfo;
+using _Path = Shims.NET.System.IO.Path;
 
 namespace RandomizerMod.Logging
 {
     public static class LogManager
     {
         public static readonly string R4Directory = Path.Combine(Application.persistentDataPath, "Randomizer 4");
-        public static readonly string RecentDirectory = Path.Combine(Application.persistentDataPath, "Randomizer 4", "Recent");
-        public static string UserDirectory => Path.Combine(Application.persistentDataPath, "Randomizer 4", "user" + RandomizerMod.RS.ProfileID);
+        public static readonly string RecentDirectory = _Path.Combine(Application.persistentDataPath, "Randomizer 4", "Recent");
+        public static string UserDirectory => _Path.Combine(Application.persistentDataPath, "Randomizer 4", "user" + RandomizerMod.RS.ProfileID);
 
         /// <summary>
         /// Loggers which are activated when the save is created.

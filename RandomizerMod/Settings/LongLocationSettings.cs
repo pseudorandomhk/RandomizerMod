@@ -5,14 +5,12 @@
         public enum WPSetting
         {
             Allowed,
-            ExcludePathOfPain,
             ExcludeWhitePalace
         }
 
         public enum BossEssenceSetting
         {
             All,
-            ExcludeZoteAndWhiteDefender,
             ExcludeAllDreamBosses,
             ExcludeAllDreamWarriors
         }
@@ -32,7 +30,6 @@
         public bool KingFragmentPreview;
 
         public bool FlowerQuestPreview;
-        public bool GreyPrinceZotePreview;
 
         public bool WhisperingRootPreview;
         public bool DreamerPreview;
@@ -40,7 +37,6 @@
         public bool AbyssShriekPreview;
         public bool VoidHeartPreview;
 
-        public bool GodtunerPreview;
         public bool LoreTabletPreview;
 
         public bool BasinFountainPreview;
@@ -48,8 +44,6 @@
 
         public bool StagPreview;
         public bool MapPreview;
-        
-        public bool DivinePreview;
 
         public CostItemHintSettings GeoShopPreview;
         public CostItemHintSettings GrubfatherPreview;

@@ -33,16 +33,16 @@ namespace RandomizerMod.RC
             {
                 CoupledRandomizationGroup g1 = new()
                 {
-                    Items = t1s.ToArray<IRandoItem>(),
-                    Locations = t2s.ToArray<IRandoLocation>(),
+                    Items = t1s.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = t2s.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = label,
                     Strategy = strategy ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                     Validator = new WeakTransitionValidator(),
                 };
                 CoupledRandomizationGroup g2 = new()
                 {
-                    Items = t2s.ToArray<IRandoItem>(),
-                    Locations = t1s.ToArray<IRandoLocation>(),
+                    Items = t2s.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = t1s.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = reverseLabel,
                     Strategy = strategy?.Clone() ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                     Validator = new WeakTransitionValidator(),
@@ -59,15 +59,15 @@ namespace RandomizerMod.RC
             {
                 RandomizationGroup g1 = new()
                 {
-                    Items = t1s.ToArray<IRandoItem>(),
-                    Locations = t2s.ToArray<IRandoLocation>(),
+                    Items = t1s.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = t2s.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = label,
                     Strategy = strategy ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                 };
                 RandomizationGroup g2 = new()
                 {
-                    Items = t2s.ToArray<IRandoItem>(),
-                    Locations = t1s.ToArray<IRandoLocation>(),
+                    Items = t2s.Select(irc => irc as IRandoItem).ToArray(),
+                    Locations = t1s.Select(irc => irc as IRandoLocation).ToArray(),
                     Label = reverseLabel,
                     Strategy = strategy?.Clone() ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
                 };

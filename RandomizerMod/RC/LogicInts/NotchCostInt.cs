@@ -17,7 +17,7 @@ namespace RandomizerMod.RC.LogicInts
         {
             this.charmIDs = charmIDs;
             Array.Sort(charmIDs);
-            Name = $"$NotchCost[{string.Join(",", charmIDs)}]";
+            Name = $"$NotchCost[{string.Join(",", charmIDs.Select(i => i.ToString()).ToArray())}]";
         }
 
         public static bool TryMatch(LogicManager lm, string term, out LogicVariable variable)

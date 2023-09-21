@@ -92,7 +92,7 @@ namespace RandomizerMod
         public static void Localize(Text t)
         {
             string text = t.text;
-            if (string.IsNullOrWhiteSpace(text)) return;
+            if (string.IsNullOrEmpty(text) || text.Trim().Length == 0) return;
             bool newLineTerminated = text[text.Length - 1] == '\n';
             if (newLineTerminated) text = text.Substring(0, text.Length - 1);
             text = Localize(text);

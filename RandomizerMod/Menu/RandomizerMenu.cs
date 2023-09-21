@@ -10,6 +10,9 @@ using RandomizerMod.Settings.Presets;
 using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
+using static Shims.NET.System.Diagnostics.Stopwatch;
+using static Shims.NET.System.Linq.Enumerable;
+using Array = Shims.NET.System.Array;
 using Random = System.Random;
 
 namespace RandomizerMod.Menu
@@ -474,7 +477,7 @@ namespace RandomizerMod.Menu
             CopyHashButton = new SmallButton(FinalPage, "Copy Hash");
             CopyHashButton.OnClick += () =>
             {
-                GUIUtility.systemCopyBuffer = string.Join(", ", HashLabels.Skip(1).Select(l => l.Text.text.Replace("\n", "")));
+                GUIUtility.systemCopyBuffer = string.Join(", ", HashLabels.Skip(1).Select(l => l.Text.text.Replace("\n", "")).ToArray());
             };
             CopyHashButton.Hide();
 
@@ -634,7 +637,7 @@ namespace RandomizerMod.Menu
             randomFixedStartButton.OnClick += () =>
             {
                 startLocationTypeSwitch.SetValue(StartLocationSettings.RandomizeStartLocationType.Fixed);
-                startLocationSwitch.ChangeSelection(rng.NextWhere(startLocationSwitch.Elements, e => !e.Locked));
+                startLocationSwitch.ChangeSelection(rng.NextWhere(startLocationSwitch.Elements.AsIReadOnlyList(), e => !e.Locked));
             };
             UpdateStartLocation();
 
@@ -1190,7 +1193,7 @@ namespace RandomizerMod.Menu
             connectionsPanel.Clear();
             if (buttons.Count > 0)
             {
-                connectionsPanel.AddRange(buttons);
+                connectionsPanel.AddRange(buttons.Select(sb => sb as IMenuElement));
                 emptyConnectionsPanelLabel.Hide();
             }
             else
@@ -1219,7 +1222,7 @@ namespace RandomizerMod.Menu
             if (buttons.Count < 2) return false;
 
             postGenerationRedirectPanel.Clear();
-            postGenerationRedirectPanel.AddRange(buttons);
+            postGenerationRedirectPanel.AddRange(buttons.Select(sb => sb as IMenuElement));
             return true;
         }
 

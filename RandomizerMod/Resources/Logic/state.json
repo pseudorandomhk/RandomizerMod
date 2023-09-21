@@ -50,10 +50,6 @@
       "CHARM34",
       "CHARM35",
       "CHARM36",
-      "CHARM37",
-      "CHARM38",
-      "CHARM39",
-      "CHARM40",
 
       "noCHARM1",
       "noCHARM2",
@@ -90,11 +86,7 @@
       "noCHARM33",
       "noCHARM34",
       "noCHARM35",
-      "noCHARM36",
-      "noCHARM37",
-      "noCHARM38",
-      "noCHARM39",
-      "noCHARM40"
+      "noCHARM36"
 
     ],
     "Int": [

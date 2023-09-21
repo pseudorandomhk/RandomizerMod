@@ -71,12 +71,6 @@
     "PriceCap": 500,
     "MajorItem": true
   },
-  "Dream_Gate": {
-    "Name": "Dream_Gate",
-    "Pool": "Skill",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "Awoken_Dream_Nail": {
     "Name": "Awoken_Dream_Nail",
     "Pool": "Skill",
@@ -287,32 +281,14 @@
     "PriceCap": 500,
     "MajorItem": false
   },
-  "Unbreakable_Heart": {
-    "Name": "Unbreakable_Heart",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "Fragile_Greed": {
     "Name": "Fragile_Greed",
     "Pool": "Charm",
     "PriceCap": 500,
     "MajorItem": false
   },
-  "Unbreakable_Greed": {
-    "Name": "Unbreakable_Greed",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "Fragile_Strength": {
     "Name": "Fragile_Strength",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Unbreakable_Strength": {
-    "Name": "Unbreakable_Strength",
     "Pool": "Charm",
     "PriceCap": 500,
     "MajorItem": false
@@ -395,36 +371,6 @@
     "PriceCap": 500,
     "MajorItem": true
   },
-  "Sprintmaster": {
-    "Name": "Sprintmaster",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Dreamshield": {
-    "Name": "Dreamshield",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Weaversong": {
-    "Name": "Weaversong",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Grimmchild1": {
-    "Name": "Grimmchild1",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Grimmchild2": {
-    "Name": "Grimmchild2",
-    "Pool": "Charm",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "City_Crest": {
     "Name": "City_Crest",
     "Pool": "Key",
@@ -471,12 +417,6 @@
     "Name": "King's_Brand",
     "Pool": "Key",
     "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Godtuner": {
-    "Name": "Godtuner",
-    "Pool": "Key",
-    "PriceCap": 1,
     "MajorItem": false
   },
   "Collector's_Map": {
@@ -584,36 +524,6 @@
   "Geo_Chest-Weavers_Den": {
     "Name": "Geo_Chest-Weavers_Den",
     "Pool": "Geo",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Geo_Chest-Junk_Pit_1": {
-    "Name": "Geo_Chest-Junk_Pit_1",
-    "Pool": "JunkPitChest",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Geo_Chest-Junk_Pit_2": {
-    "Name": "Geo_Chest-Junk_Pit_2",
-    "Pool": "JunkPitChest",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Geo_Chest-Junk_Pit_3": {
-    "Name": "Geo_Chest-Junk_Pit_3",
-    "Pool": "JunkPitChest",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Geo_Chest-Junk_Pit_5": {
-    "Name": "Geo_Chest-Junk_Pit_5",
-    "Pool": "JunkPitChest",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Lumafly_Escape": {
-    "Name": "Lumafly_Escape",
-    "Pool": "JunkPitChest",
     "PriceCap": 1,
     "MajorItem": false
   },
@@ -803,18 +713,6 @@
     "PriceCap": 500,
     "MajorItem": false
   },
-  "Boss_Essence-White_Defender": {
-    "Name": "Boss_Essence-White_Defender",
-    "Pool": "DreamBoss",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Boss_Essence-Grey_Prince_Zote": {
-    "Name": "Boss_Essence-Grey_Prince_Zote",
-    "Pool": "DreamBoss",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "Grub": {
     "Name": "Grub",
     "Pool": "Grub",
@@ -965,12 +863,6 @@
     "PriceCap": 500,
     "MajorItem": false
   },
-  "Hidden_Station_Stag": {
-    "Name": "Hidden_Station_Stag",
-    "Pool": "Stag",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
   "Stag_Nest_Stag": {
     "Name": "Stag_Nest_Stag",
     "Pool": "Stag",
@@ -986,12 +878,6 @@
   "Lifeblood_Cocoon_Large": {
     "Name": "Lifeblood_Cocoon_Large",
     "Pool": "Cocoon",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Grimmkin_Flame": {
-    "Name": "Grimmkin_Flame",
-    "Pool": "Flame",
     "PriceCap": 500,
     "MajorItem": false
   },
@@ -1021,12 +907,6 @@
   },
   "Journal_Entry-Garpede": {
     "Name": "Journal_Entry-Garpede",
-    "Pool": "Journal",
-    "PriceCap": 500,
-    "MajorItem": false
-  },
-  "Journal_Entry-Seal_of_Binding": {
-    "Name": "Journal_Entry-Seal_of_Binding",
     "Pool": "Journal",
     "PriceCap": 500,
     "MajorItem": false
@@ -1289,12 +1169,6 @@
     "PriceCap": 1,
     "MajorItem": false
   },
-  "Soul_Totem-Path_of_Pain": {
-    "Name": "Soul_Totem-Path_of_Pain",
-    "Pool": "Soul",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
   "Lore_Tablet-City_Entrance": {
     "Name": "Lore_Tablet-City_Entrance",
     "Pool": "Lore",
@@ -1483,12 +1357,6 @@
   },
   "Lore_Tablet-Palace_Throne": {
     "Name": "Lore_Tablet-Palace_Throne",
-    "Pool": "PalaceLore",
-    "PriceCap": 1,
-    "MajorItem": false
-  },
-  "Lore_Tablet-Path_of_Pain_Entrance": {
-    "Name": "Lore_Tablet-Path_of_Pain_Entrance",
     "Pool": "PalaceLore",
     "PriceCap": 1,
     "MajorItem": false

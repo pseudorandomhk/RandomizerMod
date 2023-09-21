@@ -216,7 +216,7 @@ namespace RandomizerMod.RC
 
             Export.BeginExport(gs, ctx);
             Export.ExportStart(gs, ctx);
-            Export.ExportItemPlacements(rb, ctx.itemPlacements);
+            Export.ExportItemPlacements(rb, ctx.itemPlacements.AsIReadOnlyList());
             Export.ExportTransitionPlacements(rb, ctx.transitionPlacements);
 
             try

@@ -1,6 +1,7 @@
 ﻿using RandomizerCore.Logic;
 using RandomizerCore.Logic.StateLogic;
 using System.Security.Cryptography;
+using Array = Shims.NET.System.Array;
 
 namespace RandomizerMod.RC.StateVariables
 {

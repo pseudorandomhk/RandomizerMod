@@ -1,5 +1,6 @@
 ﻿using RandomizerCore.Logic;
 using RandomizerCore.Logic.StateLogic;
+using Enum = Shims.NET.System.Enum;
 
 namespace RandomizerMod.RC.StateVariables
 {

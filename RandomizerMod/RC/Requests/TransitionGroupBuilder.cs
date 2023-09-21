@@ -30,8 +30,8 @@ namespace RandomizerMod.RC
             RandomizationGroup g = new()
             {
                 Label = label,
-                Items = items.ToArray<IRandoItem>(),
-                Locations = locations.ToArray<IRandoLocation>(),
+                Items = items.Select(irc => irc as IRandoItem).ToArray(),
+                Locations = locations.Select(irc => irc as IRandoLocation).ToArray(),
                 Strategy = strategy ?? factory.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy(),
             };
             groups.Add(g);

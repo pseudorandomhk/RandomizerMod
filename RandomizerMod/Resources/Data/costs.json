@@ -47,23 +47,6 @@
     "term": "DREAMNAIL",
     "amount": 1
   },
-  // unbreakables at 5% of vanilla price
-  "Unbreakable_Heart": {
-    "term": "GEO",
-    "amount": 600
-  },
-  "Unbreakable_Greed": {
-    "term": "GEO",
-    "amount": 450
-  },
-  "Unbreakable_Strength": {
-    "term": "GEO",
-    "amount": 750
-  },
-  "Godtuner": {
-    "term": "SIMPLE",
-    "amount": 1
-  },
   "Vessel_Fragment-Basin": {
     "term": "GEO",
     "amount": 3000
@@ -151,10 +134,6 @@
   "Distant_Village_Stag": {
     "term": "GEO",
     "amount": 250
-  },
-  "Hidden_Station_Stag": {
-    "term": "GEO",
-    "amount": 300
   },
   "Stag_Nest_Stag": {
     "term": "GEO",

@@ -109,7 +109,7 @@ namespace RandomizerMod.IC
             }
 
             // Platform to escape from the geo rock above Lemm
-            plats.Add(new() { SceneName = SceneNames.Ruins1_05c, X = 26.6f, Y = 73.2f, Test = lacksAnyVertical });
+            plats.Add(new() { SceneName = SceneNames.Ruins1_05, X = 26.6f, Y = 73.2f, Test = lacksAnyVertical });
 
             // Platforms to climb back up to King's Pass with no items
             if (!targetNames.Contains($"{SceneNames.Town}[right1]") && gs.StartLocationSettings.StartLocation == "King's Pass")

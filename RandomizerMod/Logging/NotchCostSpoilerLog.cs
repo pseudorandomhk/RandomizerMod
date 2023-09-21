@@ -42,19 +42,15 @@ namespace RandomizerMod.Logging
           "Deep_Focus",
           "Grubberfly's_Elegy",
           "Kingsoul",
-          "Sprintmaster",
-          "Dreamshield",
-          "Weaversong",
-          "Grimmchild",
         };
 
         public override void Log(LogArguments args)
         {
             List<int> notchCosts = args.ctx.notchCosts;
-            if (notchCosts is null || notchCosts.Count < 40) return;
+            if (notchCosts is null || notchCosts.Count < 36) return;
 
-            Dictionary<string, int> costLookup = new(40);
-            for (int i = 0; i < 40; i++)
+            Dictionary<string, int> costLookup = new(36);
+            for (int i = 0; i < 36; i++)
             {
                 costLookup[_charmNames[i]] = notchCosts[i];
             }

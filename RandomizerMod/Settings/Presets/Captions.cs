@@ -7,12 +7,12 @@ namespace RandomizerMod.Settings.Presets
     {
         public static string Caption(this PoolSettings ps)
         {
-            return string.Join(", ", typeof(PoolSettings).GetFields().Where(f => (bool)f.GetValue(ps)).Select(f => Localize(f.GetMenuName())));
+            return string.Join(", ", typeof(PoolSettings).GetFields().Where(f => (bool)f.GetValue(ps)).Select(f => Localize(f.GetMenuName())).ToArray());
         }
 
         public static string Caption(this SkipSettings ss)
         {
-            return string.Join(", ", typeof(SkipSettings).GetFields().Where(f => (bool)f.GetValue(ss)).Select(f => Localize(f.GetMenuName())));
+            return string.Join(", ", typeof(SkipSettings).GetFields().Where(f => (bool)f.GetValue(ss)).Select(f => Localize(f.GetMenuName())).ToArray());
         }
 
         public static string Caption(this CostSettings cs)
@@ -30,9 +30,6 @@ namespace RandomizerMod.Settings.Presets
             StringBuilder sb = new();
             switch (ll.WhitePalaceRando)
             {
-                case LongLocationSettings.WPSetting.ExcludePathOfPain:
-                    sb.Append(Localize("Locations (such as soul totems) in Path of Pain will not be randomized. "));
-                    break;
                 case LongLocationSettings.WPSetting.ExcludeWhitePalace:
                     sb.Append(Localize("Locations (such as soul totems or lore tablets) in White Palace will not be randomized. "));
                     break;
@@ -44,9 +41,6 @@ namespace RandomizerMod.Settings.Presets
                     break;
                 case LongLocationSettings.BossEssenceSetting.ExcludeAllDreamWarriors when Settings.PoolSettings.BossEssence:
                     sb.Append(Localize("Dream Warrior essence rewards will not be randomized. "));
-                    break;
-                case LongLocationSettings.BossEssenceSetting.ExcludeZoteAndWhiteDefender when Settings.PoolSettings.BossEssence:
-                    sb.Append(Localize("Grey Prince Zote and White Defender essence rewards will not be randomized. "));
                     break;
             }
             sb.Append(Localize("See Long Location Options for details regarding location previews."));
@@ -372,13 +366,13 @@ namespace RandomizerMod.Settings.Presets
             if (sgs.RandomizeOnStart)
             {
                 sb.Append("Randomized: ");
-                sb.Append(string.Join(", ", groups.Where(g => g.Key < 3).SelectMany(g => g.Select(p => Localize(p.fi.GetMenuName())))));
+                sb.Append(string.Join(", ", groups.Where(g => g.Key < 3).SelectMany(g => g.Select(p => Localize(p.fi.GetMenuName()))).ToArray()));
                 sb.Append(". ");
                 foreach (var g in groups.Where(g => g.Key >= 3))
                 {
                     sb.Append(g.Key);
                     sb.Append(": ");
-                    sb.Append(string.Join(", ", g.Select(p => Localize(p.fi.GetMenuName()))));
+                    sb.Append(string.Join(", ", g.Select(p => Localize(p.fi.GetMenuName())).ToArray()));
                     sb.Append(". ");
                 }
             }
@@ -388,7 +382,7 @@ namespace RandomizerMod.Settings.Presets
                 {
                     sb.Append(g.Key);
                     sb.Append(": ");
-                    sb.Append(string.Join(", ", g.Select(p => Localize(p.fi.GetMenuName()))));
+                    sb.Append(string.Join(", ", g.Select(p => Localize(p.fi.GetMenuName())).ToArray()));
                     sb.Append(". ");
                 }
             }

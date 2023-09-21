@@ -133,7 +133,7 @@
   },
   "Shade_Soul": {
     "Name": "Shade_Soul",
-    "SceneName": "Ruins1_31b",
+    "SceneName": "Ruins1_31",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -289,7 +289,7 @@
   },
   "Quick_Slash": {
     "Name": "Quick_Slash",
-    "SceneName": "Deepnest_East_14b",
+    "SceneName": "Deepnest_East_14",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -323,42 +323,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Dreamshield": {
-    "Name": "Dreamshield",
-    "SceneName": "RestingGrounds_17",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Weaversong": {
-    "Name": "Weaversong",
-    "SceneName": "Deepnest_45_v02",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmchild": {
-    "Name": "Grimmchild",
-    "SceneName": "Grimm_Main_Tent",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Unbreakable_Heart": {
-    "Name": "Unbreakable_Heart",
-    "SceneName": "Grimm_Divine",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Unbreakable_Greed": {
-    "Name": "Unbreakable_Greed",
-    "SceneName": "Grimm_Divine",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Unbreakable_Strength": {
-    "Name": "Unbreakable_Strength",
-    "SceneName": "Grimm_Divine",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "City_Crest": {
     "Name": "City_Crest",
     "SceneName": "Crossroads_10",
@@ -367,7 +331,7 @@
   },
   "Tram_Pass": {
     "Name": "Tram_Pass",
-    "SceneName": "Deepnest_26b",
+    "SceneName": "Deepnest_26",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -380,12 +344,6 @@
   "Simple_Key-City": {
     "Name": "Simple_Key-City",
     "SceneName": "Ruins1_17",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Simple_Key-Lurker": {
-    "Name": "Simple_Key-Lurker",
-    "SceneName": "GG_Lurker",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -404,12 +362,6 @@
   "King's_Brand": {
     "Name": "King's_Brand",
     "SceneName": "Room_Wyrm",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Godtuner": {
-    "Name": "Godtuner",
-    "SceneName": "GG_Waterways",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -533,12 +485,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Charm_Notch-Grimm": {
-    "Name": "Charm_Notch-Grimm",
-    "SceneName": "Grimm_Main_Tent",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Pale_Ore-Basin": {
     "Name": "Pale_Ore-Basin",
     "SceneName": "Abyss_17",
@@ -611,36 +557,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Geo_Chest-Junk_Pit_1": {
-    "Name": "Geo_Chest-Junk_Pit_1",
-    "SceneName": "GG_Waterways",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Geo_Chest-Junk_Pit_2": {
-    "Name": "Geo_Chest-Junk_Pit_2",
-    "SceneName": "GG_Waterways",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Geo_Chest-Junk_Pit_3": {
-    "Name": "Geo_Chest-Junk_Pit_3",
-    "SceneName": "GG_Waterways",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Geo_Chest-Junk_Pit_5": {
-    "Name": "Geo_Chest-Junk_Pit_5",
-    "SceneName": "GG_Waterways",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Lumafly_Escape-Junk_Pit_Chest_4": {
-    "Name": "Lumafly_Escape-Junk_Pit_Chest_4",
-    "SceneName": "GG_Waterways",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Rancid_Egg-Sheo": {
     "Name": "Rancid_Egg-Sheo",
     "SceneName": "Fungus1_15",
@@ -685,7 +601,7 @@
   },
   "Rancid_Egg-City_of_Tears_Left": {
     "Name": "Rancid_Egg-City_of_Tears_Left",
-    "SceneName": "Ruins1_05c",
+    "SceneName": "Ruins1_05",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -959,12 +875,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "King's_Idol-Pale_Lurker": {
-    "Name": "King's_Idol-Pale_Lurker",
-    "SceneName": "GG_Lurker",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "King's_Idol-Deepnest": {
     "Name": "King's_Idol-Deepnest",
     "SceneName": "Deepnest_33",
@@ -1136,18 +1046,6 @@
   "Boss_Essence-Lost_Kin": {
     "Name": "Boss_Essence-Lost_Kin",
     "SceneName": "Abyss_19",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Boss_Essence-White_Defender": {
-    "Name": "Boss_Essence-White_Defender",
-    "SceneName": "Waterways_15",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Boss_Essence-Grey_Prince_Zote": {
-    "Name": "Boss_Essence-Grey_Prince_Zote",
-    "SceneName": "Room_Bretta",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -1589,12 +1487,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Hidden_Station_Stag": {
-    "Name": "Hidden_Station_Stag",
-    "SceneName": "Abyss_22",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Stag_Nest_Stag": {
     "Name": "Stag_Nest_Stag",
     "SceneName": "Cliffs_03",
@@ -1649,66 +1541,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Grimmkin_Flame-City_Storerooms": {
-    "Name": "Grimmkin_Flame-City_Storerooms",
-    "SceneName": "Ruins1_28",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Greenpath": {
-    "Name": "Grimmkin_Flame-Greenpath",
-    "SceneName": "Fungus1_10",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Crystal_Peak": {
-    "Name": "Grimmkin_Flame-Crystal_Peak",
-    "SceneName": "Mines_10",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-King's_Pass": {
-    "Name": "Grimmkin_Flame-King's_Pass",
-    "SceneName": "Tutorial_01",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Resting_Grounds": {
-    "Name": "Grimmkin_Flame-Resting_Grounds",
-    "SceneName": "RestingGrounds_06",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Kingdom's_Edge": {
-    "Name": "Grimmkin_Flame-Kingdom's_Edge",
-    "SceneName": "Deepnest_East_03",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Fungal_Core": {
-    "Name": "Grimmkin_Flame-Fungal_Core",
-    "SceneName": "Fungus2_30",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Ancient_Basin": {
-    "Name": "Grimmkin_Flame-Ancient_Basin",
-    "SceneName": "Abyss_02",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Hive": {
-    "Name": "Grimmkin_Flame-Hive",
-    "SceneName": "Hive_03",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Grimmkin_Flame-Brumm": {
-    "Name": "Grimmkin_Flame-Brumm",
-    "SceneName": "Room_spider_small",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Hunter's_Journal": {
     "Name": "Hunter's_Journal",
     "SceneName": "Fungus1_08",
@@ -1736,12 +1568,6 @@
   "Journal_Entry-Garpede": {
     "Name": "Journal_Entry-Garpede",
     "SceneName": "Deepnest_44",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Journal_Entry-Seal_of_Binding": {
-    "Name": "Journal_Entry-Seal_of_Binding",
-    "SceneName": "White_Palace_20",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -2699,18 +2525,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Geo_Rock-Pale_Lurker": {
-    "Name": "Geo_Rock-Pale_Lurker",
-    "SceneName": "GG_Lurker",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Geo_Rock-Godhome_Pipeway": {
-    "Name": "Geo_Rock-Godhome_Pipeway",
-    "SceneName": "GG_Pipeway",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Geo_Rock-Hive_Entrance": {
     "Name": "Geo_Rock-Hive_Entrance",
     "SceneName": "Hive_01",
@@ -2915,18 +2729,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Geo_Rock-Fluke_Hermit_Dupe": {
-    "Name": "Geo_Rock-Fluke_Hermit_Dupe",
-    "SceneName": "Room_GG_Shortcut",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Geo_Rock-Fluke_Hermit": {
-    "Name": "Geo_Rock-Fluke_Hermit",
-    "SceneName": "Room_GG_Shortcut",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Geo_Rock-Pleasure_House": {
     "Name": "Geo_Rock-Pleasure_House",
     "SceneName": "Ruins_Elevator",
@@ -2947,7 +2749,7 @@
   },
   "Geo_Rock-City_of_Tears_Above_Lemm": {
     "Name": "Geo_Rock-City_of_Tears_Above_Lemm",
-    "SceneName": "Ruins1_05c",
+    "SceneName": "Ruins1_05",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -3055,7 +2857,7 @@
   },
   "Boss_Geo-Elegant_Soul_Warrior": {
     "Name": "Boss_Geo-Elegant_Soul_Warrior",
-    "SceneName": "Ruins1_31b",
+    "SceneName": "Ruins1_31",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
@@ -3389,54 +3191,6 @@
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   },
-  "Soul_Totem-Path_of_Pain_Below_Lever": {
-    "Name": "Soul_Totem-Path_of_Pain_Below_Lever",
-    "SceneName": "White_Palace_17",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Left_of_Lever": {
-    "Name": "Soul_Totem-Path_of_Pain_Left_of_Lever",
-    "SceneName": "White_Palace_17",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Entrance": {
-    "Name": "Soul_Totem-Path_of_Pain_Entrance",
-    "SceneName": "White_Palace_18",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Second": {
-    "Name": "Soul_Totem-Path_of_Pain_Second",
-    "SceneName": "White_Palace_18",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Hidden": {
-    "Name": "Soul_Totem-Path_of_Pain_Hidden",
-    "SceneName": "White_Palace_19",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Below_Thornskip": {
-    "Name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
-    "SceneName": "White_Palace_19",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Path_of_Pain_Final": {
-    "Name": "Soul_Totem-Path_of_Pain_Final",
-    "SceneName": "White_Palace_20",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Soul_Totem-Pale_Lurker": {
-    "Name": "Soul_Totem-Pale_Lurker",
-    "SceneName": "GG_Lurker",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
   "Lore_Tablet-City_Entrance": {
     "Name": "Lore_Tablet-City_Entrance",
     "SceneName": "Ruins1_02",
@@ -3626,12 +3380,6 @@
   "Lore_Tablet-Palace_Throne": {
     "Name": "Lore_Tablet-Palace_Throne",
     "SceneName": "White_Palace_09",
-    "FlexibleCount": false,
-    "AdditionalProgressionPenalty": false
-  },
-  "Lore_Tablet-Path_of_Pain_Entrance": {
-    "Name": "Lore_Tablet-Path_of_Pain_Entrance",
-    "SceneName": "White_Palace_18",
     "FlexibleCount": false,
     "AdditionalProgressionPenalty": false
   }

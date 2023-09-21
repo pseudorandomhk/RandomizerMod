@@ -14,6 +14,16 @@ namespace RandomizerMod.RandomizerData
         public bool IsTitledAreaTransition { get; init; }
         public bool IsMapAreaTransition { get; init; }
         public TransitionSides Sides { get; init; }
+
+        public virtual bool Equals(TransitionDef other) => ReferenceEquals(this, other) ||
+            (other is not null && this.EqualityContract == other.EqualityContract && this.SceneName == other.SceneName &&
+            this.DoorName == other.DoorName && this.VanillaTarget == other.VanillaTarget && this.Direction == other.Direction &&
+            this.IsTitledAreaTransition == other.IsTitledAreaTransition && this.IsMapAreaTransition == other.IsMapAreaTransition &&
+            this.Sides == other.Sides);
+
+        public override int GetHashCode() => HashCode.Combine(EqualityContract.GetHashCode(), SceneName?.GetHashCode(),
+            DoorName?.GetHashCode(), VanillaTarget?.GetHashCode(), Direction.GetHashCode(), IsTitledAreaTransition.GetHashCode(),
+            IsMapAreaTransition.GetHashCode(), Sides.GetHashCode());
     }
 
     public enum TransitionSides

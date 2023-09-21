@@ -44,7 +44,7 @@ namespace RandomizerMod.RC.StateVariables
                 {
                     stalledCasts = (CastSpellVariable)lm.GetVariableStrict(
                         CastSpellVariable.Prefix + 
-                        '[' + string.Join(",", InnerParameters.SelectMany(p => int.TryParse(p, out int i) ? Enumerable.Repeat("1", i) : Enumerable.Repeat(p, 1))) + ']'
+                        '[' + string.Join(",", InnerParameters.SelectMany(p => int.TryParse(p, out int i) ? Enumerable.Repeat("1", i) : Enumerable.Repeat(p, 1)).ToArray()) + ']'
                         );
                     if (!noLeftStall) leftDash = lm.GetTermStrict("LEFTDASH");
                     if (!noRightStall) rightDash = lm.GetTermStrict("RIGHTDASH");

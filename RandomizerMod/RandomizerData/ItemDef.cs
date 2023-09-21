@@ -6,6 +6,13 @@
         public string Pool { get; init; } // for items in multiple pools, give the most common pool.
         public int PriceCap { get; init; }
         public bool MajorItem { get; init; } // reserved for the most useful items in the randomizer, used by CursedSettings to penalize progression
+
+        public virtual bool Equals(ItemDef other) => ReferenceEquals(this, other) ||
+            (other is not null && this.EqualityContract == other.EqualityContract && this.Name == other.Name &&
+            this.Pool == other.Pool && this.PriceCap == other.PriceCap && this.MajorItem == other.MajorItem);
+
+        public override int GetHashCode() => HashCode.Combine(EqualityContract.GetHashCode(), Name?.GetHashCode(),
+            Pool?.GetHashCode(), PriceCap.GetHashCode(), MajorItem.GetHashCode());
     }
 
     /*

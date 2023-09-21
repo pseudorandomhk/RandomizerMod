@@ -56,7 +56,6 @@
       "Shade_Cloak",
       "Isma's_Tear",
       "Dream_Nail",
-      "Dream_Gate",
       "Awoken_Dream_Nail",
       "Vengeful_Spirit",
       "Shade_Soul",
@@ -76,7 +75,6 @@
       "Shade_Cloak",
       "Isma's_Tear",
       "Dream_Nail",
-      "Seer",
       "Seer",
       "Vengeful_Spirit",
       "Shade_Soul",
@@ -116,16 +114,6 @@
       {
         "item": "Dream_Nail",
         "location": "Dream_Nail"
-      },
-      {
-        "item": "Dream_Gate",
-        "location": "Seer",
-        "costs": [
-          {
-            "term": "ESSENCE",
-            "amount": 900
-          }
-        ]
       },
       {
         "item": "Awoken_Dream_Nail",
@@ -250,13 +238,6 @@
       "Queen_Fragment",
       "King_Fragment",
       "Void_Heart",
-      "Sprintmaster",
-      "Dreamshield",
-      "Weaversong",
-      "Grimmchild2",
-      "Unbreakable_Heart",
-      "Unbreakable_Greed",
-      "Unbreakable_Strength"
     ],
     "IncludeLocations": [
       "Grubfather",
@@ -285,12 +266,8 @@
       "Queen_Fragment",
       "King_Fragment",
       "Void_Heart",
-      "Dreamshield",
-      "Weaversong",
-      "Grimmchild",
       "Sly",
       "Sly",
-      "Sly_(Key)",
       "Sly_(Key)",
       "Iselda",
       "Salubra",
@@ -300,10 +277,7 @@
       "Salubra",
       "Leg_Eater",
       "Leg_Eater",
-      "Leg_Eater",
-      "Unbreakable_Heart",
-      "Unbreakable_Greed",
-      "Unbreakable_Strength"
+      "Leg_Eater"
     ],
     "Vanilla": [
       {
@@ -429,18 +403,6 @@
         "location": "Void_Heart"
       },
       {
-        "item": "Dreamshield",
-        "location": "Dreamshield"
-      },
-      {
-        "item": "Weaversong",
-        "location": "Weaversong"
-      },
-      {
-        "item": "Grimmchild2",
-        "location": "Grimmchild"
-      },
-      {
         "item": "Gathering_Swarm",
         "location": "Sly"
       },
@@ -450,10 +412,6 @@
       },
       {
         "item": "Heavy_Blow",
-        "location": "Sly_(Key)"
-      },
-      {
-        "item": "Sprintmaster",
         "location": "Sly_(Key)"
       },
       {
@@ -491,18 +449,6 @@
       {
         "item": "Fragile_Strength",
         "location": "Leg_Eater"
-      },
-      {
-        "item": "Unbreakable_Heart",
-        "location": "Unbreakable_Heart"
-      },
-      {
-        "item": "Unbreakable_Greed",
-        "location": "Unbreakable_Greed"
-      },
-      {
-        "item": "Unbreakable_Strength",
-        "location": "Unbreakable_Strength"
       }
     ]
   },
@@ -517,12 +463,10 @@
       "Simple_Key",
       "Simple_Key",
       "Simple_Key",
-      "Simple_Key",
       "Shopkeeper's_Key",
       "Elegant_Key",
       "Love_Key",
       "King's_Brand",
-      "Godtuner",
       "Collector's_Map"
     ],
     "IncludeLocations": [
@@ -530,11 +474,9 @@
       "Tram_Pass",
       "Simple_Key-Basin",
       "Simple_Key-City",
-      "Simple_Key-Lurker",
       "Shopkeeper's_Key",
       "Love_Key",
       "King's_Brand",
-      "Godtuner",
       "Collector's_Map",
       "Sly",
       "Sly",
@@ -558,10 +500,6 @@
         "location": "Simple_Key-City"
       },
       {
-        "item": "Simple_Key",
-        "location": "Simple_Key-Lurker"
-      },
-      {
         "item": "Shopkeeper's_Key",
         "location": "Shopkeeper's_Key"
       },
@@ -572,10 +510,6 @@
       {
         "item": "King's_Brand",
         "location": "King's_Brand"
-      },
-      {
-        "item": "Godtuner",
-        "location": "Godtuner"
       },
       {
         "item": "Collector's_Map",
@@ -792,14 +726,12 @@
     "IncludeItems": [
       "Charm_Notch",
       "Charm_Notch",
-      "Charm_Notch",
       "Charm_Notch"
     ],
     "IncludeLocations": [
       "Charm_Notch-Shrumal_Ogres",
       "Charm_Notch-Fog_Canyon",
-      "Charm_Notch-Colosseum",
-      "Charm_Notch-Grimm"
+      "Charm_Notch-Colosseum"
     ],
     "Vanilla": [
       {
@@ -813,10 +745,6 @@
       {
         "item": "Charm_Notch",
         "location": "Charm_Notch-Colosseum"
-      },
-      {
-        "item": "Charm_Notch",
-        "location": "Charm_Notch-Grimm"
       }
     ]
   },
@@ -885,7 +813,7 @@
         "costs": [
           {
             "term": "CHARMS",
-            "amount": 40
+            "amount": 36
           }
         ]
       }
@@ -1006,47 +934,6 @@
       {
         "item": "Geo_Chest-Weavers_Den",
         "location": "Geo_Chest-Weavers_Den"
-      }
-    ]
-  },
-  {
-    "Group": "GeoChests",
-    "Name": "JunkPitChest",
-    "Path": "PoolSettings.JunkPitChests",
-    "IncludeItems": [
-      "Geo_Chest-Junk_Pit_1",
-      "Geo_Chest-Junk_Pit_2",
-      "Geo_Chest-Junk_Pit_3",
-      "Geo_Chest-Junk_Pit_5",
-      "Lumafly_Escape"
-    ],
-    "IncludeLocations": [
-      "Geo_Chest-Junk_Pit_1",
-      "Geo_Chest-Junk_Pit_2",
-      "Geo_Chest-Junk_Pit_3",
-      "Geo_Chest-Junk_Pit_5",
-      "Lumafly_Escape-Junk_Pit_Chest_4"
-    ],
-    "Vanilla": [
-      {
-        "item": "Geo_Chest-Junk_Pit_1",
-        "location": "Geo_Chest-Junk_Pit_1"
-      },
-      {
-        "item": "Geo_Chest-Junk_Pit_2",
-        "location": "Geo_Chest-Junk_Pit_2"
-      },
-      {
-        "item": "Geo_Chest-Junk_Pit_3",
-        "location": "Geo_Chest-Junk_Pit_3"
-      },
-      {
-        "item": "Geo_Chest-Junk_Pit_5",
-        "location": "Geo_Chest-Junk_Pit_5"
-      },
-      {
-        "item": "Lumafly_Escape",
-        "location": "Lumafly_Escape-Junk_Pit_Chest_4"
       }
     ]
   },
@@ -1232,7 +1119,6 @@
       "King's_Idol",
       "King's_Idol",
       "King's_Idol",
-      "King's_Idol",
       "Arcane_Egg",
       "Arcane_Egg",
       "Arcane_Egg",
@@ -1276,7 +1162,6 @@
       "King's_Idol-Glade_of_Hope",
       "King's_Idol-Dung_Defender",
       "King's_Idol-Great_Hopper",
-      "King's_Idol-Pale_Lurker",
       "King's_Idol-Deepnest",
       "Seer",
       "Arcane_Egg-Lifeblood_Core",
@@ -1443,10 +1328,6 @@
       {
         "item": "King's_Idol",
         "location": "King's_Idol-Great_Hopper"
-      },
-      {
-        "item": "King's_Idol",
-        "location": "King's_Idol-Pale_Lurker"
       },
       {
         "item": "King's_Idol",
@@ -1637,16 +1518,12 @@
     "IncludeItems": [
       "Boss_Essence-Failed_Champion",
       "Boss_Essence-Soul_Tyrant",
-      "Boss_Essence-Lost_Kin",
-      "Boss_Essence-White_Defender",
-      "Boss_Essence-Grey_Prince_Zote"
+      "Boss_Essence-Lost_Kin"
     ],
     "IncludeLocations": [
       "Boss_Essence-Failed_Champion",
       "Boss_Essence-Soul_Tyrant",
-      "Boss_Essence-Lost_Kin",
-      "Boss_Essence-White_Defender",
-      "Boss_Essence-Grey_Prince_Zote"
+      "Boss_Essence-Lost_Kin"
     ],
     "Vanilla": [
       {
@@ -1660,14 +1537,6 @@
       {
         "item": "Boss_Essence-Lost_Kin",
         "location": "Boss_Essence-Lost_Kin"
-      },
-      {
-        "item": "Boss_Essence-White_Defender",
-        "location": "Boss_Essence-White_Defender"
-      },
-      {
-        "item": "Boss_Essence-Grey_Prince_Zote",
-        "location": "Boss_Essence-Grey_Prince_Zote"
       }
     ]
   },
@@ -2106,7 +1975,6 @@
       "King's_Station_Stag",
       "Resting_Grounds_Stag",
       "Distant_Village_Stag",
-      "Hidden_Station_Stag",
       "Stag_Nest_Stag"
     ],
     "IncludeLocations": [
@@ -2119,7 +1987,6 @@
       "King's_Station_Stag",
       "Resting_Grounds_Stag",
       "Distant_Village_Stag",
-      "Hidden_Station_Stag",
       "Stag_Nest_Stag"
     ],
     "Vanilla": [
@@ -2158,10 +2025,6 @@
       {
         "item": "Distant_Village_Stag",
         "location": "Distant_Village_Stag"
-      },
-      {
-        "item": "Hidden_Station_Stag",
-        "location": "Hidden_Station_Stag"
       },
       {
         "item": "Stag_Nest_Stag",
@@ -2229,77 +2092,6 @@
     ]
   },
   {
-    "Group": "GrimmkinFlames",
-    "Name": "Flame",
-    "Path": "PoolSettings.GrimmkinFlames",
-    "IncludeItems": [
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame",
-      "Grimmkin_Flame"
-    ],
-    "IncludeLocations": [
-      "Grimmkin_Flame-City_Storerooms",
-      "Grimmkin_Flame-Greenpath",
-      "Grimmkin_Flame-Crystal_Peak",
-      "Grimmkin_Flame-King's_Pass",
-      "Grimmkin_Flame-Resting_Grounds",
-      "Grimmkin_Flame-Kingdom's_Edge",
-      "Grimmkin_Flame-Fungal_Core",
-      "Grimmkin_Flame-Ancient_Basin",
-      "Grimmkin_Flame-Hive",
-      "Grimmkin_Flame-Brumm"
-    ],
-    "Vanilla": [
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-City_Storerooms"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Greenpath"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Crystal_Peak"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-King's_Pass"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Resting_Grounds"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Kingdom's_Edge"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Fungal_Core"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Ancient_Basin"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Hive"
-      },
-      {
-        "item": "Grimmkin_Flame",
-        "location": "Grimmkin_Flame-Brumm"
-      }
-    ]
-  },
-  {
     "Group": "JournalEntries",
     "Name": "Journal",
     "Path": "PoolSettings.JournalEntries",
@@ -2308,16 +2100,14 @@
       "Journal_Entry-Void_Tendrils",
       "Journal_Entry-Charged_Lumafly",
       "Journal_Entry-Goam",
-      "Journal_Entry-Garpede",
-      "Journal_Entry-Seal_of_Binding"
+      "Journal_Entry-Garpede"
     ],
     "IncludeLocations": [
       "Hunter's_Journal",
       "Journal_Entry-Void_Tendrils",
       "Journal_Entry-Charged_Lumafly",
       "Journal_Entry-Goam",
-      "Journal_Entry-Garpede",
-      "Journal_Entry-Seal_of_Binding"
+      "Journal_Entry-Garpede"
     ],
     "Vanilla": [
       {
@@ -2339,10 +2129,6 @@
       {
         "item": "Journal_Entry-Garpede",
         "location": "Journal_Entry-Garpede"
-      },
-      {
-        "item": "Journal_Entry-Seal_of_Binding",
-        "location": "Journal_Entry-Seal_of_Binding"
       }
     ]
   },
@@ -2594,8 +2380,6 @@
       "Geo_Rock-GreenPath01",
       "Geo_Rock-GreenPath01",
       "Geo_Rock-GreenPath02",
-      "Geo_Rock-Outskirts",
-      "Geo_Rock-City",
       "Geo_Rock-Hive",
       "Geo_Rock-Hive",
       "Geo_Rock-Hive",
@@ -2630,8 +2414,6 @@
       "Geo_Rock-Grave02",
       "Geo_Rock-Grave01",
       "Geo_Rock-GreenPath02",
-      "Geo_Rock-Fung02",
-      "Geo_Rock-Fung01",
       "Geo_Rock-City",
       "Geo_Rock-City",
       "Geo_Rock-City",
@@ -2803,8 +2585,6 @@
       "Geo_Rock-Love_Key",
       "Geo_Rock-Love_Key_Dupe",
       "Geo_Rock-Queen's_Gardens_Above_Marmu",
-      "Geo_Rock-Pale_Lurker",
-      "Geo_Rock-Godhome_Pipeway",
       "Geo_Rock-Hive_Entrance",
       "Geo_Rock-Hive_Outside_Bench",
       "Geo_Rock-Hive_Below_Root",
@@ -2839,8 +2619,6 @@
       "Geo_Rock-Resting_Grounds_Catacombs_Left_Dupe",
       "Geo_Rock-Resting_Grounds_Catacombs_Left",
       "Geo_Rock-Overgrown_Mound",
-      "Geo_Rock-Fluke_Hermit_Dupe",
-      "Geo_Rock-Fluke_Hermit",
       "Geo_Rock-Pleasure_House",
       "Geo_Rock-City_of_Tears_Quirrel",
       "Geo_Rock-City_of_Tears_Lemm",
@@ -3466,14 +3244,6 @@
         "location": "Geo_Rock-Queen's_Gardens_Above_Marmu"
       },
       {
-        "item": "Geo_Rock-Outskirts",
-        "location": "Geo_Rock-Pale_Lurker"
-      },
-      {
-        "item": "Geo_Rock-City",
-        "location": "Geo_Rock-Godhome_Pipeway"
-      },
-      {
         "item": "Geo_Rock-Hive",
         "location": "Geo_Rock-Hive_Entrance"
       },
@@ -3608,14 +3378,6 @@
       {
         "item": "Geo_Rock-GreenPath02",
         "location": "Geo_Rock-Overgrown_Mound"
-      },
-      {
-        "item": "Geo_Rock-Fung02",
-        "location": "Geo_Rock-Fluke_Hermit_Dupe"
-      },
-      {
-        "item": "Geo_Rock-Fung01",
-        "location": "Geo_Rock-Fluke_Hermit"
       },
       {
         "item": "Geo_Rock-City",
@@ -3805,15 +3567,7 @@
       "Soul_Totem-Palace",
       "Soul_Totem-Palace",
       "Soul_Totem-Palace",
-      "Soul_Totem-Palace",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-Path_of_Pain",
-      "Soul_Totem-G"
+      "Soul_Totem-Palace"
     ],
     "IncludeLocations": [
       "Soul_Totem-Basin",
@@ -3866,15 +3620,7 @@
       "Soul_Totem-White_Palace_Hub",
       "Soul_Totem-White_Palace_Left",
       "Soul_Totem-White_Palace_Final",
-      "Soul_Totem-White_Palace_Right",
-      "Soul_Totem-Path_of_Pain_Below_Lever",
-      "Soul_Totem-Path_of_Pain_Left_of_Lever",
-      "Soul_Totem-Path_of_Pain_Entrance",
-      "Soul_Totem-Path_of_Pain_Second",
-      "Soul_Totem-Path_of_Pain_Hidden",
-      "Soul_Totem-Path_of_Pain_Below_Thornskip",
-      "Soul_Totem-Path_of_Pain_Final",
-      "Soul_Totem-Pale_Lurker"
+      "Soul_Totem-White_Palace_Right"
     ],
     "Vanilla": [
       {
@@ -4080,38 +3826,6 @@
       {
         "item": "Soul_Totem-Palace",
         "location": "Soul_Totem-White_Palace_Right"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Below_Lever"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Left_of_Lever"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Entrance"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Second"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Hidden"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Below_Thornskip"
-      },
-      {
-        "item": "Soul_Totem-Path_of_Pain",
-        "location": "Soul_Totem-Path_of_Pain_Final"
-      },
-      {
-        "item": "Soul_Totem-G",
-        "location": "Soul_Totem-Pale_Lurker"
       }
     ]
   },
@@ -4151,8 +3865,7 @@
       "Lore_Tablet-Howling_Cliffs",
       "Lore_Tablet-Kingdom's_Edge",
       "Lore_Tablet-Palace_Workshop",
-      "Lore_Tablet-Palace_Throne",
-      "Lore_Tablet-Path_of_Pain_Entrance"
+      "Lore_Tablet-Palace_Throne"
     ],
     "IncludeLocations": [
       "Lore_Tablet-City_Entrance",
@@ -4186,8 +3899,7 @@
       "Lore_Tablet-Howling_Cliffs",
       "Lore_Tablet-Kingdom's_Edge",
       "Lore_Tablet-Palace_Workshop",
-      "Lore_Tablet-Palace_Throne",
-      "Lore_Tablet-Path_of_Pain_Entrance"
+      "Lore_Tablet-Palace_Throne"
     ],
     "Vanilla": [
       {
@@ -4317,10 +4029,6 @@
       {
         "item": "Lore_Tablet-Palace_Throne",
         "location": "Lore_Tablet-Palace_Throne"
-      },
-      {
-        "item": "Lore_Tablet-Path_of_Pain_Entrance",
-        "location": "Lore_Tablet-Path_of_Pain_Entrance"
       }
     ]
   }

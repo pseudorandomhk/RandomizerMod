@@ -16,6 +16,13 @@ namespace RandomizerMod.RandomizerData
         /// If true, copies of this location after the first will receive severe penalties to prevent multiple progression items.
         /// </summary>
         public bool AdditionalProgressionPenalty { get; init; }
+
+        public virtual bool Equals(LocationDef other) => ReferenceEquals(this, other) ||
+            (other is not null && this.EqualityContract == other.EqualityContract && this.Name == other.Name &&
+            this.SceneName == other.SceneName && this.FlexibleCount == other.FlexibleCount && this.AdditionalProgressionPenalty == other.AdditionalProgressionPenalty);
+
+        public override int GetHashCode() => HashCode.Combine(EqualityContract.GetHashCode(), Name?.GetHashCode(),
+            SceneName?.GetHashCode(), FlexibleCount.GetHashCode(), AdditionalProgressionPenalty.GetHashCode());
     }
 
     // Incomplete ideas for potential enhancements below:

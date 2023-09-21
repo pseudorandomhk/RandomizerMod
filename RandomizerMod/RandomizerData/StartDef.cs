@@ -82,5 +82,15 @@ namespace RandomizerMod.RandomizerData
                 SpecialEffects = ItemChanger.SpecialStartEffects.Default | ItemChanger.SpecialStartEffects.SlowSoulRefill,
             };
         }
+
+        public virtual bool Equals(StartDef other) => ReferenceEquals(this, other) ||
+            (other is not null && this.EqualityContract == other.EqualityContract && this.Name == other.Name &&
+            this.SceneName == other.SceneName && this.X == other.X && this.Y == other.Y && this.Zone == other.Zone &&
+            this.Transition == other.Transition && this.Logic == other.Logic && this.RandoLogic == other.RandoLogic &&
+            this.ExcludeFromMenu == other.ExcludeFromMenu);
+
+        public override int GetHashCode() => HashCode.Combine(EqualityContract.GetHashCode(), Name?.GetHashCode(),
+            SceneName?.GetHashCode(), X.GetHashCode(), Y.GetHashCode(), Zone.GetHashCode(), Transition?.GetHashCode(),
+            Logic?.GetHashCode(), RandoLogic?.GetHashCode(), ExcludeFromMenu.GetHashCode());
     }
 }

@@ -86,10 +86,6 @@
     "Deep_Focus",
     "Grubberfly's_Elegy",
     "WHITEFRAGMENT",
-    "Sprintmaster",
-    "Dreamshield",
-    "Weaversong",
-    "Grimmchild",
     "CREST",
     "LANTERN",
     "TRAM",
@@ -98,7 +94,6 @@
     "ELEGANT",
     "Love_Key",
     "King's_Brand",
-    "Godtuner",
     "Collector's_Map",
     "QUILL",
     "Crossroads_Map",
@@ -123,7 +118,6 @@
     "King's_Station_Stag",
     "Resting_Grounds_Stag",
     "Distant_Village_Stag",
-    "Hidden_Station_Stag",
     "Stag_Nest_Stag",
     "JOURNAL",
     "Salubra's_Blessing",
@@ -148,8 +142,7 @@
     "KINGSIDOLS",
     "ARCANEEGGS",
     "MAPS",
-    "STAGS",
-    "FLAMES"
+    "STAGS"
   ],
   "State": []
 }
