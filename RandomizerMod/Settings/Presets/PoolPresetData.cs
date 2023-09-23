@@ -36,7 +36,6 @@
                 BossGeo = false,
                 LoreTablets = false,
                 JournalEntries = false,
-                JunkPitChests = false,
             };
 
             Super = new PoolSettings
@@ -63,7 +62,6 @@
                 BossGeo = false,
                 LoreTablets = false,
                 JournalEntries = false,
-                JunkPitChests = false,
             };
 
             LifeTotems = new PoolSettings
@@ -90,7 +88,6 @@
                 BossGeo = true,
                 LoreTablets = false,
                 JournalEntries = false,
-                JunkPitChests = false,
             };
 
             SpoilerDAB = new PoolSettings
@@ -117,7 +114,6 @@
                 BossGeo = false,
                 LoreTablets = false,
                 JournalEntries = false,
-                JunkPitChests = false,
             };
 
             Everything = new PoolSettings
@@ -144,7 +140,6 @@
                 BossGeo = true,
                 LoreTablets = true,
                 JournalEntries = true,
-                JunkPitChests = true,
             };
 
             Vanilla = new PoolSettings
@@ -171,7 +166,6 @@
                 BossGeo = false,
                 LoreTablets = false,
                 JournalEntries = false,
-                JunkPitChests = false,
             };
 
             PoolPresets = new Dictionary<string, PoolSettings>

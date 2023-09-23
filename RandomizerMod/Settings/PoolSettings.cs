@@ -25,6 +25,5 @@
         public bool LoreTablets;
 
         public bool JournalEntries;
-        public bool JunkPitChests;
     }
 }
