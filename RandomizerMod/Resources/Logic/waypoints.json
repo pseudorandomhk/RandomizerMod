@@ -168,7 +168,7 @@
   },
   {
     "name": "Defeated_Watcher_Knights",
-    "logic": "(Ruins2_03[bot1] | Ruins2_03[top1]) + COMBAT[Watcher_Knights]",
+    "logic": "(Ruins2_03[bot1] + (ANYCLAW | WINGS) | Ruins2_03[top1]) + COMBAT[Watcher_Knights]",
     "Stateless": true
   },
   {
@@ -192,7 +192,7 @@
   },
   {
     "name": "Defeated_Collector",
-    "logic": "NOTHOUGHTSHEADEMPTY + Ruins2_11[right1] + (LEFTCLAW | RIGHTCLAW + (RIGHTDASH | PRECISEMOVEMENT) | WINGS) + COMBAT[Collector]",
+    "logic": "NOTHOUGHTSHEADEMPTY + Ruins2_11[right1] + LOVE + (LEFTCLAW | RIGHTCLAW + (RIGHTDASH | PRECISEMOVEMENT) | WINGS) + COMBAT[Collector]",
     "Stateless": true
   },
   {
@@ -370,11 +370,6 @@
   {
     "name": "Opened_Archives_Exit_Wall",
     "logic": "Fungus3_47",
-    "Stateless": true
-  },
-  {
-    "name": "Opened_Tramway_Exit_Gate",
-    "logic": "NOTHOUGHTSHEADEMPTY + (Deepnest_26[right1] | Deepnest_26[bot1]) + (WINGS | LEFTCLAW)",
     "Stateless": true
   },
   {
@@ -1073,7 +1068,7 @@
   },
   {
     "name": "Ruins1_05",
-    "logic": "NOTHOUGHTSHEADEMPTY + Ruins1_05[right1] | Ruins1_05[right2] | Ruins1_05[top1]"
+    "logic": "NOTHOUGHTSHEADEMPTY + Ruins1_05[right1] | Ruins1_05[right2] | Ruins1_05[top1] | Ruins1_05[left2] | Ruins1_05[bot1]"
   },
   {
     "name": "Ruins1_23",
@@ -1093,7 +1088,7 @@
   },
   {
     "name": "Ruins2_01",
-    "logic": "NOTHOUGHTSHEADEMPTY + Ruins2_01[top1] | Ruins2_01[left2]"
+    "logic": "NOTHOUGHTSHEADEMPTY + Ruins2_01[top1] | Ruins2_01[left2] | ((Ruins2_01[left1] | Ruins2_01[right1]) + (LEFTCLAW + BACKGROUNDPOGOS | WINGS + ENEMYPOGOS))"
   },
   {
     "name": "Ruins2_04",
@@ -1109,7 +1104,7 @@
   },
   {
     "name": "RestingGrounds_05",
-    "logic": "RestingGrounds_05[left1] | RestingGrounds_05[left2] | RestingGrounds_05[left3] | RestingGrounds_05[right1] | RestingGrounds_05[right2] | RestingGrounds_05[bot1]"
+    "logic": "RestingGrounds_05[left1] | RestingGrounds_05[left2] | RestingGrounds_05[right1] | RestingGrounds_05[right2] | RestingGrounds_05[bot1]"
   },
   {
     "name": "RestingGrounds_10",

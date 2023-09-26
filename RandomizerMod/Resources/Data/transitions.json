@@ -20,7 +20,7 @@
   "Tutorial_01[top1]": {
     "SceneName": "Tutorial_01",
     "DoorName": "top1",
-    "VanillaTarget": null,
+    "VanillaTarget": "Cliffs_02[bot2]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
@@ -65,7 +65,7 @@
   "Town[top1]": {
     "SceneName": "Town",
     "DoorName": "top1",
-    "VanillaTarget": null,
+    "VanillaTarget": "Cliffs_02[right1]",
     "Direction": "Top",
     "IsTitledAreaTransition": true,
     "IsMapAreaTransition": true,
@@ -5339,7 +5339,7 @@
   "Ruins1_27[right1]": {
     "SceneName": "Ruins1_27",
     "DoorName": "right1",
-    "VanillaTarget": "Ruins2_01[left2]",
+    "VanillaTarget": "Ruins2_01[left1]",
     "Direction": "Right",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
@@ -5489,9 +5489,9 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "Ruins2_01[left2]": {
+  "Ruins2_01[left1]": {
     "SceneName": "Ruins2_01",
-    "DoorName": "left2",
+    "DoorName": "left1",
     "VanillaTarget": "Ruins1_27[right1]",
     "Direction": "Left",
     "IsTitledAreaTransition": false,
@@ -5939,15 +5939,6 @@
     "IsMapAreaTransition": false,
     "Sides": "Both"
   },
-  "RestingGrounds_05[left3]": {
-    "SceneName": "RestingGrounds_05",
-    "DoorName": "left3",
-    "VanillaTarget": "RestingGrounds_17[right1]",
-    "Direction": "Left",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
   "RestingGrounds_05[right1]": {
     "SceneName": "RestingGrounds_05",
     "DoorName": "right1",
@@ -6070,15 +6061,6 @@
     "DoorName": "door_Mansion",
     "VanillaTarget": "Room_Mansion[left1]",
     "Direction": "Door",
-    "IsTitledAreaTransition": false,
-    "IsMapAreaTransition": false,
-    "Sides": "Both"
-  },
-  "RestingGrounds_17[right1]": {
-    "SceneName": "RestingGrounds_17",
-    "DoorName": "right1",
-    "VanillaTarget": "RestingGrounds_05[left3]",
-    "Direction": "Right",
     "IsTitledAreaTransition": false,
     "IsMapAreaTransition": false,
     "Sides": "Both"

@@ -3047,14 +3047,14 @@
   {
     "sceneName": "Deepnest_East_14",
     "gateName": "door1",
-    "logic": "NOTHOUGHTSHEADEMPTY + Deepnest_East_14[door1] | Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + Broke_Oro_Quake_Floor_3 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE) + (RIGHTDASH | PRECISEMOVEMENT) | Deepnest_East_14[top2] + (RIGHTDASH | SPIKETUNNELS)",
+    "logic": "NOTHOUGHTSHEADEMPTY + Deepnest_East_14[door1] | Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + Broke_Oro_Quake_Floor_3 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE) + (RIGHTDASH | PRECISEMOVEMENT) | Deepnest_East_14[top1] + (RIGHTDASH | SPIKETUNNELS)",
     "oneWayType": "TwoWay",
     "Name": "Deepnest_East_14[door1]"
   },
   {
     "sceneName": "Deepnest_East_14",
     "gateName": "top1",
-    "logic": "Deepnest_East_14[top1] + (ANYCLAW | WINGS | ENEMYPOGOS) + NOTHOUGHTSHEADEMPTY",
+    "logic": "NOTHOUGHTSHEADEMPTY + Deepnest_East_14[top1] + (ANYCLAW | WINGS | ENEMYPOGOS) | *Deepnest_East_14[door1] + (LEFTDASH | SPIKETUNNELS) + (ENEMYPOGOS | DANGEROUSSKIPS | FULLCLAW | WINGS)",
     "oneWayType": "TwoWay",
     "Name": "Deepnest_East_14[top1]"
   },
@@ -3180,7 +3180,7 @@
   {
     "sceneName": "Hive_03",
     "gateName": "left1",
-    "logic": "NOTHOUGHTSHEADEMPTY + Hive_03[left1] | (Hive_03[right2] | Hive_03[right3]) + (RIGHTCLAW | WINGS)",
+    "logic": "NOTHOUGHTSHEADEMPTY + Hive_03[left1] | (Hive_03[right1] | Hive_03[right2] | Hive_03[right3]) + (RIGHTCLAW | WINGS)",
     "oneWayType": "TwoWay",
     "Name": "Hive_03[left1]"
   },
@@ -3194,14 +3194,14 @@
   {
     "sceneName": "Hive_03",
     "gateName": "right3",
-    "logic": "NOTHOUGHTSHEADEMPTY + Hive_03[right3] | Hive_03[right2] | Hive_03[right1]",
+    "logic": "NOTHOUGHTSHEADEMPTY + Hive_03[right3] | Hive_03[right2] | Hive_03[right1] | Hive_03[left1]",
     "oneWayType": "TwoWay",
     "Name": "Hive_03[right3]"
   },
   {
     "sceneName": "Hive_03",
     "gateName": "right1",
-    "logic": "Hive_03[right1] | NOTHOUGHTSHEADEMPTY + (FULLCLAW | WINGS | LEFTCLAW + FULLDASH | RIGHTCLAW + FULLDASH + ENEMYPOGOS)",
+    "logic": "Hive_03[right1] | (Hive_03[right2] | Hive_03[right3] | Hive_03[left1]) + (FULLCLAW | WINGS | LEFTCLAW + FULLDASH | RIGHTCLAW + FULLDASH + ENEMYPOGOS)",
     "oneWayType": "TwoWay",
     "Name": "Hive_03[right1]"
   },
@@ -3978,7 +3978,7 @@
   {
     "sceneName": "Ruins1_05",
     "gateName": "right2",
-    "logic": "NOTHOUGHTSHEADEMPTY + Ruins1_05[right2] | Ruins1_05",
+    "logic": "NOTHOUGHTSHEADEMPTY + Ruins1_05[right2] | Ruins1_05[right1] | Ruins1_05[top1] | Ruins1_05 + (WINGS | FULLCLAW)",
     "oneWayType": "TwoWay",
     "Name": "Ruins1_05[right2]"
   },
@@ -4621,13 +4621,6 @@
   },
   {
     "sceneName": "RestingGrounds_05",
-    "gateName": "left3",
-    "logic": "RestingGrounds_05[left3] | RestingGrounds_05",
-    "oneWayType": "TwoWay",
-    "Name": "RestingGrounds_05[left3]"
-  },
-  {
-    "sceneName": "RestingGrounds_05",
     "gateName": "right1",
     "logic": "RestingGrounds_05[right1] | RestingGrounds_05 + Opened_Glade_Door",
     "oneWayType": "TwoWay",
@@ -4723,13 +4716,6 @@
     "logic": "RestingGrounds_12[door_Mansion] | RestingGrounds_12[bot1] | Bench-Grey_Mourner",
     "oneWayType": "TwoWay",
     "Name": "RestingGrounds_12[door_Mansion]"
-  },
-  {
-    "sceneName": "RestingGrounds_17",
-    "gateName": "right1",
-    "logic": "RestingGrounds_17[right1]",
-    "oneWayType": "TwoWay",
-    "Name": "RestingGrounds_17[right1]"
   },
   {
     "sceneName": "Room_Mansion",
