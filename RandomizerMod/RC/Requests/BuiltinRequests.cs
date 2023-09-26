@@ -197,12 +197,6 @@ namespace RandomizerMod.RC
                 if (rb.TryGetTransitionDef(t, out TransitionDef def)) transitions.Add(def);
             }
 
-            TransitionGroupBuilder oneWays = new()
-            {
-                label = RBConsts.OneWayGroup,
-                stageLabel = RBConsts.MainTransitionStage,
-            };
-
             if (ts.TransitionMatching == TransitionSettings.TransitionMatchingSetting.MatchingDirections 
                 || ts.TransitionMatching == TransitionSettings.TransitionMatchingSetting.MatchingDirectionsAndNoDoorToDoor)
             {
@@ -238,18 +232,7 @@ namespace RandomizerMod.RC
 
                 foreach (TransitionDef def in transitions)
                 {
-                    switch (def.Sides)
-                    {
-                        case TransitionSides.OneWayOut:
-                            oneWays.Targets.Add(def.Name);
-                            break;
-                        case TransitionSides.OneWayIn:
-                            oneWays.Sources.Add(def.Name);
-                            break;
-                        default:
-                            directedTransitions[def.Direction].Add(def);
-                            break;
-                    }
+                    directedTransitions[def.Direction].Add(def);
                 }
 
                 rb.rng.PermuteInPlace(doors);
@@ -292,7 +275,6 @@ namespace RandomizerMod.RC
                 foreach (TransitionDef def in bots) vertical.Group1.Add(def.Name);
                 foreach (TransitionDef def in tops) vertical.Group2.Add(def.Name);
 
-                oneWays.strategy = rb.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy();
                 horizontal.strategy = rb.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy();
                 vertical.strategy = rb.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy();
 
@@ -311,7 +293,6 @@ namespace RandomizerMod.RC
                     ((DefaultGroupPlacementStrategy)horizontal.strategy).ConstraintList.Add(new(NotDoorToDoor, null, "RM Not Door to Door"));
                 }
 
-                sb.Add(oneWays);
                 sb.Add(horizontal);
                 sb.Add(vertical);
 
@@ -328,9 +309,7 @@ namespace RandomizerMod.RC
                         };
                         if (isModeTransition)
                         {
-                            gb = def.Sides != TransitionSides.Both
-                                ? oneWays
-                                : def.Direction switch
+                            gb = def.Direction switch
                                 {
                                     TransitionDirection.Top or
                                     TransitionDirection.Bot => vertical,
@@ -354,24 +333,11 @@ namespace RandomizerMod.RC
                 };
                 foreach (TransitionDef def in transitions)
                 {
-                    switch (def.Sides)
-                    {
-                        case TransitionSides.OneWayOut:
-                            oneWays.Targets.Add(def.Name);
-                            break;
-                        case TransitionSides.OneWayIn:
-                            oneWays.Sources.Add(def.Name);
-                            break;
-                        default:
-                            twoWays.Transitions.Add(def.Name);
-                            break;
-                    }
+                    twoWays.Transitions.Add(def.Name);
                 }
 
-                oneWays.strategy = rb.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy();
                 twoWays.strategy = rb.gs.ProgressionDepthSettings.GetTransitionPlacementStrategy();
 
-                sb.Add(oneWays);
                 sb.Add(twoWays);
 
                 bool NonMatchedTryResolveGroup(RequestBuilder rb, string item, ElementType type, out GroupBuilder gb)
@@ -387,7 +353,7 @@ namespace RandomizerMod.RC
                         };
                         if (isModeTransition)
                         {
-                            gb = def.Sides != TransitionSides.Both ? oneWays : twoWays;
+                            gb = twoWays;
                             return true;
                         }
                     }

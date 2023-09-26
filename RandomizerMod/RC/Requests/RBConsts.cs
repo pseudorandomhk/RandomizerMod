@@ -50,10 +50,6 @@
         /// </summary>
         public const string InTopOutBotGroup = "Top -> Bot";
         /// <summary>
-        /// Label for the group of one-way transitions in any transition rando.
-        /// </summary>
-        public const string OneWayGroup = "One Way Transitions";
-        /// <summary>
         /// Label for the group of two-way transitions, in non-matched transition rando.
         /// </summary>
         public const string TwoWayGroup = "Two Way Transitions";
