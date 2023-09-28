@@ -28,9 +28,6 @@ namespace RandomizerMod.RC
                 lmb.DeserializeJson(type, RandomizerMod.Assembly.GetManifestResourceStream($"RandomizerMod.Resources.Logic.{fileName}.json"));
             }
 
-            //foreach (var key in lmb.LogicLookup.Keys.ToList())
-            //    lmb.DoLogicEdit(new(key, "TRUE"));
-
             foreach (var a in _runtimeLogicOverrideOwner.GetSubscribers())
             {
                 try
@@ -41,6 +38,11 @@ namespace RandomizerMod.RC
                 {
                     throw new InvalidOperationException("Error invoking logic override event", e);
                 }
+            }
+
+            foreach (string transition in lmb.Transitions)
+            {
+                lmb.DoLogicEdit(new(transition, "EXITTRANSITION + ORIG"));
             }
 
             return new(lmb);

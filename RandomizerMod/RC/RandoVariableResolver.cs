@@ -27,11 +27,19 @@ namespace RandomizerMod.RC
             if (StartRespawnResetVariable.TryMatch(lm, term, out variable)) return true;
             if (WarpToStartResetVariable.TryMatch(lm, term, out variable)) return true;
             if (WarpToBenchResetVariable.TryMatch(lm, term, out variable)) return true;
+            if (CanCastVariable.TryMatch(lm, term, out variable)) return true;
 
 #pragma warning disable CS0618 // Type or member is obsolete
             if (NotchCostInt.TryMatch(lm, term, out variable)) return true;
             if (SafeNotchCostInt.TryMatch(lm, term, out variable)) return true;
-#pragma warning restore CS0618 // Type or member is obsolete
+#pragma warning restore CS0618 // Type or member is obsoletea
+
+            if (CanGetFloatVariable.TryMatch(lm, term, out variable)) return true;
+            if (PfloatConversionVariable.TryMatch(lm, term, out variable)) return true;
+            if (RemovePfloatVariable.TryMatch(lm, term, out variable)) return true;
+            if (CanGetDiveFloatVariable.TryMatch(lm, term, out variable)) return true;
+            if (DiveWalkOutConversionVariable.TryMatch(lm, term, out variable)) return true;
+            if (RemoveDiveWalkOutVariable.TryMatch(lm, term, out variable)) return true;
 
             return false;
         }

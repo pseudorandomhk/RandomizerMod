@@ -13,6 +13,11 @@
       "BROKEGREED",
       "BROKESTRENGTH",
       "NOFLOWER",
+      "NOFLOAT",
+      "FLOAT",
+      "PFLOAT",
+      "DIVEFLOAT",
+      "DIVEWALKOUT",
       "NOPASSEDCHARMEQUIP",
       "CHARM1",
       "CHARM2",
@@ -149,6 +154,22 @@
       "HotSpringResetCondition": "ANY",
       "BenchwarpResetCondition": "ANY",
       "StartRespawnResetCondition": "ANY"
+    },
+    "NOFLOAT": {
+      "DefaultValue": true,
+      "BenchResetCondition": "NONE"
+    },
+    "FLOAT": {
+        "BenchResetCondition": "NONE"
+    },
+    "PFLOAT": {
+        "BenchResetCondition": "NONE"
+    },
+    "DIVEFLOAT": {
+        "BenchResetCondition": "NONE"
+    },
+    "DIVEWALKOUT": {
+        "BenchResetCondition": "NONE"
     }
   },
   "NamedStates": {
@@ -160,7 +181,12 @@
     "StartRespawnResetState": {},
     "SaveQuitResetState": {
       "ModifiedBoolFields": {
-        "SPENTALLSOUL": true
+        "SPENTALLSOUL": true,
+        "NOFLOAT": true,
+        "FLOAT": false,
+        "PFLOAT": false,
+        "DIVEFLOAT": false,
+        "DIVEWALKOUT": false
       }
     },
     "HotSpringResetState": {}
