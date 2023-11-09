@@ -16,6 +16,7 @@ namespace RandomizerMod.RC.StateVariables
 
         protected readonly StateBool NoFloat;
         protected readonly StateBool Float;
+        protected readonly StateBool Pfloat;
         protected readonly Term Fireball;
 
         public CanGetFloatVariable(string name, LogicManager lm) : base(name, lm)
@@ -25,6 +26,7 @@ namespace RandomizerMod.RC.StateVariables
             {
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Float = lm.StateManager.GetBoolStrict("FLOAT");
+                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
                 Fireball = lm.GetTermStrict("FIREBALL");
 
                 if (InnerVariable.SpellCasts.Length != 1 || InnerVariable.SpellCasts[0] != 1)
@@ -58,7 +60,7 @@ namespace RandomizerMod.RC.StateVariables
         public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
         {
             yield return new(state);
-            if (pm.Has(Fireball, 1))
+            if (pm.Has(Fireball, 1) && !state.GetBool(Pfloat))
             {
                 foreach (LazyStateBuilder innerState in InnerVariable.ModifyState(sender, pm, state))
                 {
