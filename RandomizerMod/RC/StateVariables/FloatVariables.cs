@@ -142,7 +142,9 @@ namespace RandomizerMod.RC.StateVariables
 
         protected readonly StateBool NoFloat;
         protected readonly StateBool Pfloat;
-        protected readonly Term AnySpell;
+        protected readonly Term Fireball;
+        protected readonly Term Quake;
+        protected readonly Term Scream;
         
         public RemovePfloatVariable(string name, LogicManager lm) : base(name, lm)
         {
@@ -151,7 +153,9 @@ namespace RandomizerMod.RC.StateVariables
             {
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
-                AnySpell = lm.GetTermStrict("ANYSPELL");
+                Fireball = lm.GetTermStrict("FIREBALL");
+                Quake = lm.GetTermStrict("QUAKE");
+                Scream = lm.GetTermStrict("SCREAM");
 
                 if (InnerVariable.SpellCasts.Length != 1 || InnerVariable.SpellCasts[0] != 1)
                 {
@@ -177,7 +181,7 @@ namespace RandomizerMod.RC.StateVariables
 
         public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
         {
-            if (pm.Has(AnySpell) && state.GetBool(Pfloat))
+            if ((pm.Has(Fireball, 1) || pm.Has(Quake, 1) || pm.Has(Scream, 1)) && state.GetBool(Pfloat))
             {
                 foreach (LazyStateBuilder innerState in InnerVariable.ModifyState(sender, pm, state))
                 {
@@ -190,7 +194,9 @@ namespace RandomizerMod.RC.StateVariables
 
         public override IEnumerable<Term> GetTerms()
         {
-            yield return AnySpell;
+            yield return Fireball;
+            yield return Quake;
+            yield return Scream;
             foreach (Term t in InnerVariable.GetTerms()) yield return t;
         }
     }
@@ -221,7 +227,7 @@ namespace RandomizerMod.RC.StateVariables
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 Quake = lm.GetTermStrict("QUAKE");
 
-                if (InnerVariable.InnerVariable.SpellCasts.Length != 1 || InnerVariable.InnerVariable.SpellCasts[0] != 0)
+                if (InnerVariable.InnerVariable.SpellCasts.Length != 1 || InnerVariable.InnerVariable.SpellCasts[0] != 1)
                 {
                     throw new ArgumentOutOfRangeException("CanGetDiveFloat takes exactly one spell cast");
                 }
