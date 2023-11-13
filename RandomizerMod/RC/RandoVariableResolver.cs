@@ -36,7 +36,6 @@ namespace RandomizerMod.RC
 
             if (CanGetFloatVariable.TryMatch(lm, term, out variable)) return true;
             if (PfloatConversionVariable.TryMatch(lm, term, out variable)) return true;
-            if (RemovePfloatVariable.TryMatch(lm, term, out variable)) return true;
             if (CanGetDiveFloatVariable.TryMatch(lm, term, out variable)) return true;
             if (DiveWalkOutConversionVariable.TryMatch(lm, term, out variable)) return true;
             if (RemoveDiveWalkOutVariable.TryMatch(lm, term, out variable)) return true;

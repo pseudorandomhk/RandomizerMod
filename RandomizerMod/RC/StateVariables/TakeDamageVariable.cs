@@ -21,6 +21,10 @@ namespace RandomizerMod.RC.StateVariables
         protected readonly StateBool HasAlmostDied;
         protected readonly StateBool NoFlower;
         protected readonly StateBool NoPassedCharmEquip;
+        protected readonly StateBool NoFloat;
+        protected readonly StateBool Float;
+        protected readonly StateBool Pfloat;
+        protected readonly StateBool DiveFloat;
         protected readonly StateInt SpentHP;
         protected readonly StateInt SpentBlueHP;
         protected readonly Term MaskShards;
@@ -46,6 +50,10 @@ namespace RandomizerMod.RC.StateVariables
                 HasAlmostDied = lm.StateManager.GetBoolStrict("HASALMOSTDIED");
                 NoFlower = lm.StateManager.GetBoolStrict("NOFLOWER");
                 NoPassedCharmEquip = lm.StateManager.GetBoolStrict("NOPASSEDCHARMEQUIP");
+                NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
+                Float = lm.StateManager.GetBoolStrict("FLOAT");
+                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
+                DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 SpentHP = lm.StateManager.GetIntStrict("SPENTHP");
                 SpentBlueHP = lm.StateManager.GetIntStrict("SPENTBLUEHP");
                 MaskShards = lm.GetTermStrict("MASKSHARDS");
@@ -117,6 +125,15 @@ namespace RandomizerMod.RC.StateVariables
         {
             bool firstTime = !state.GetBool(HasTakenDamage);
             int amount = CalculateAmount(pm, state);
+
+            if (state.GetBool(Float))
+            {
+                state.SetBool(Pfloat, true);
+            }
+            state.SetBool(Float, false);
+            state.SetBool(DiveFloat, false);
+            state.SetBool(NoFloat, !state.GetBool(Pfloat));
+
             if (firstTime)
             {
                 return GenerateGreedyCharmLayouts(pm, state).SelectMany(state => amount == 1 ? ModifyStateSingleDamage(pm, state) : ModifyStateDoubleDamage(amount, pm, state));

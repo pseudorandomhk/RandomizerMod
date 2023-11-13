@@ -35,6 +35,10 @@ namespace RandomizerMod.RC.StateVariables
         protected readonly StateInt UsedNotches;
         protected readonly StateBool CannotRegainSoul;
         protected readonly StateBool SpentAllSoul;
+        protected readonly StateBool NoFloat;
+        protected readonly StateBool Float;
+        protected readonly StateBool Pfloat;
+        protected readonly StateBool DiveFloat;
         protected readonly Term VesselFragments;
         protected readonly Term ItemRando;
         protected readonly Term MapAreaRando;
@@ -58,6 +62,10 @@ namespace RandomizerMod.RC.StateVariables
                 UsedNotches = lm.StateManager.GetIntStrict("USEDNOTCHES");
                 CannotRegainSoul = lm.StateManager.GetBoolStrict("CANNOTREGAINSOUL");
                 SpentAllSoul = lm.StateManager.GetBoolStrict("SPENTALLSOUL");
+                NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
+                Float = lm.StateManager.GetBoolStrict("FLOAT");
+                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
+                DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 VesselFragments = lm.GetTermStrict("VESSELFRAGMENTS");
                 ItemRando = lm.GetTermStrict("ITEMRANDO");
                 MapAreaRando = lm.GetTermStrict("MAPAREARANDO");
@@ -129,6 +137,13 @@ namespace RandomizerMod.RC.StateVariables
             int soul;
             int reserves;
             int maxSoul = GetMaxSoul(state);
+
+            if (state.GetBool(Float) || state.GetBool(DiveFloat))
+            {
+                yield break;
+            }
+            state.SetBool(Pfloat, false);
+            state.SetBool(NoFloat, true);
 
             if (!state.GetBool(CannotRegainSoul) && NearbySoulToBool(BeforeSoul, pm))
             {

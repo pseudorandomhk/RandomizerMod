@@ -16,7 +16,6 @@ namespace RandomizerMod.RC.StateVariables
 
         protected readonly StateBool NoFloat;
         protected readonly StateBool Float;
-        protected readonly StateBool Pfloat;
         protected readonly Term Fireball;
 
         public CanGetFloatVariable(string name, LogicManager lm) : base(name, lm)
@@ -26,7 +25,6 @@ namespace RandomizerMod.RC.StateVariables
             {
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Float = lm.StateManager.GetBoolStrict("FLOAT");
-                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
                 Fireball = lm.GetTermStrict("FIREBALL");
 
                 if (InnerVariable.SpellCasts.Length != 1 || InnerVariable.SpellCasts[0] != 1)
@@ -60,7 +58,7 @@ namespace RandomizerMod.RC.StateVariables
         public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
         {
             yield return new(state);
-            if (pm.Has(Fireball, 1) && !state.GetBool(Pfloat))
+            if (pm.Has(Fireball, 1))
             {
                 foreach (LazyStateBuilder innerState in InnerVariable.ModifyState(sender, pm, state))
                 {
@@ -115,7 +113,7 @@ namespace RandomizerMod.RC.StateVariables
 
         public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
         {
-            if (!state.GetBool(Float))
+            if (state.GetBool(Float))
             {
                 state.SetBool(Float, false);
                 state.SetBool(Pfloat, true);
@@ -130,78 +128,6 @@ namespace RandomizerMod.RC.StateVariables
     }
 
     /*
-     * Prefix: $REMOVEPFLOAT
-     * Required Parameters: None
-     * Optional Parameters: Same as $CASTSPELL. The total number of spell casts must be 1, if specified.
-    */
-    public class RemovePfloatVariable : StateModifierWrapper<CastSpellVariable>
-    {
-        public override string Name { get; }
-        public const string Prefix = "$REMOVEPFLOAT";
-        protected override string InnerPrefix => CastSpellVariable.Prefix;
-
-        protected readonly StateBool NoFloat;
-        protected readonly StateBool Pfloat;
-        protected readonly Term Fireball;
-        protected readonly Term Quake;
-        protected readonly Term Scream;
-        
-        public RemovePfloatVariable(string name, LogicManager lm) : base(name, lm)
-        {
-            Name = name;
-            try
-            {
-                NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
-                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
-                Fireball = lm.GetTermStrict("FIREBALL");
-                Quake = lm.GetTermStrict("QUAKE");
-                Scream = lm.GetTermStrict("SCREAM");
-
-                if (InnerVariable.SpellCasts.Length != 1 || InnerVariable.SpellCasts[0] != 1)
-                {
-                    throw new ArgumentOutOfRangeException("RemovePfloat takes exactly one spell cast");
-                }
-            }
-            catch (Exception e)
-            {
-                throw new InvalidOperationException("Exception constructing RemovePfloatVariable", e);
-            }
-        }
-
-        public static bool TryMatch(LogicManager lm, string term, out LogicVariable variable)
-        {
-            if (term.StartsWith(Prefix))
-            {
-                variable = new RemovePfloatVariable(term, lm);
-                return true;
-            }
-            variable = default;
-            return false;
-        }
-
-        public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
-        {
-            if ((pm.Has(Fireball, 1) || pm.Has(Quake, 1) || pm.Has(Scream, 1)) && state.GetBool(Pfloat))
-            {
-                foreach (LazyStateBuilder innerState in InnerVariable.ModifyState(sender, pm, state))
-                {
-                    innerState.SetBool(Pfloat, false);
-                    innerState.SetBool(NoFloat, true);
-                    yield return innerState;
-                }
-            }
-        }
-
-        public override IEnumerable<Term> GetTerms()
-        {
-            yield return Fireball;
-            yield return Quake;
-            yield return Scream;
-            foreach (Term t in InnerVariable.GetTerms()) yield return t;
-        }
-    }
-
-    /*
      * Prefix: $CANGETDIVEFLOAT
      * Required Parameters: None
      * Optional Parameters: Same as $CASTSPELL. The total number of spell casts must be 1, if specified.
@@ -213,7 +139,6 @@ namespace RandomizerMod.RC.StateVariables
         protected override string InnerPrefix => CanCastVariable.Prefix;
 
         protected readonly StateBool NoFloat;
-        protected readonly StateBool Pfloat;
         protected readonly StateBool DiveFloat;
         protected readonly Term Quake;
 
@@ -223,7 +148,6 @@ namespace RandomizerMod.RC.StateVariables
             try
             {
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
-                Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 Quake = lm.GetTermStrict("QUAKE");
 
@@ -256,8 +180,8 @@ namespace RandomizerMod.RC.StateVariables
             {
                 foreach (LazyStateBuilder innerState in InnerVariable.ModifyState(sender, pm, state))
                 {
+                    innerState.SetBool(NoFloat, false);
                     innerState.SetBool(DiveFloat, true);
-                    if (!innerState.GetBool(Pfloat)) innerState.SetBool(NoFloat, false);
                     yield return innerState;
                 }
             }
