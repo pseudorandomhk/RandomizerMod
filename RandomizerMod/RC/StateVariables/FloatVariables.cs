@@ -85,6 +85,7 @@ namespace RandomizerMod.RC.StateVariables
 
         protected readonly StateBool Float;
         protected readonly StateBool Pfloat;
+        protected readonly StateBool NoPfloat;
 
         public PfloatConversionVariable(string name, LogicManager lm)
         {
@@ -93,6 +94,7 @@ namespace RandomizerMod.RC.StateVariables
             {
                 Float = lm.StateManager.GetBoolStrict("FLOAT");
                 Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
+                NoPfloat = lm.StateManager.GetBoolStrict("noPFLOAT");
             }
             catch (Exception e)
             {
@@ -117,6 +119,7 @@ namespace RandomizerMod.RC.StateVariables
             {
                 state.SetBool(Float, false);
                 state.SetBool(Pfloat, true);
+                state.SetBool(NoPfloat, false);
             }
             yield return state;
         }

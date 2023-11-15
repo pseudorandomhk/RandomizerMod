@@ -38,6 +38,7 @@ namespace RandomizerMod.RC.StateVariables
         protected readonly StateBool NoFloat;
         protected readonly StateBool Float;
         protected readonly StateBool Pfloat;
+        protected readonly StateBool NoPfloat;
         protected readonly StateBool DiveFloat;
         protected readonly Term VesselFragments;
         protected readonly Term ItemRando;
@@ -65,6 +66,7 @@ namespace RandomizerMod.RC.StateVariables
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Float = lm.StateManager.GetBoolStrict("FLOAT");
                 Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
+                NoPfloat = lm.StateManager.GetBoolStrict("noPFLOAT");
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 VesselFragments = lm.GetTermStrict("VESSELFRAGMENTS");
                 ItemRando = lm.GetTermStrict("ITEMRANDO");
@@ -143,6 +145,7 @@ namespace RandomizerMod.RC.StateVariables
                 yield break;
             }
             state.SetBool(Pfloat, false);
+            state.SetBool(NoPfloat, true);
             state.SetBool(NoFloat, true);
 
             if (!state.GetBool(CannotRegainSoul) && NearbySoulToBool(BeforeSoul, pm))

@@ -10,8 +10,9 @@ namespace RandomizerMod.RC.StateVariables
             { "$NOFLOAT", "NOFLOAT" },
             { "$FLOAT", "FLOAT" },
             { "$PFLOAT", "PFLOAT" },
-            { "$DIVEFLOAT", "DIVEFLOAT" },
-            { "$DIVEWALKOUT", "DIVEWALKOUT" }
+            { "$noPFLOAT", "noPFLOAT" },
+            //{ "$DIVEFLOAT", "DIVEFLOAT" },
+            //{ "$DIVEWALKOUT", "DIVEWALKOUT" }
         };
 
         public override string Name { get; }

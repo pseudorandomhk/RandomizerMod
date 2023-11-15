@@ -24,6 +24,7 @@ namespace RandomizerMod.RC.StateVariables
         protected readonly StateBool NoFloat;
         protected readonly StateBool Float;
         protected readonly StateBool Pfloat;
+        protected readonly StateBool NoPfloat;
         protected readonly StateBool DiveFloat;
         protected readonly StateInt SpentHP;
         protected readonly StateInt SpentBlueHP;
@@ -53,6 +54,7 @@ namespace RandomizerMod.RC.StateVariables
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Float = lm.StateManager.GetBoolStrict("FLOAT");
                 Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
+                NoPfloat = lm.StateManager.GetBoolStrict("noPFLOAT");
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
                 SpentHP = lm.StateManager.GetIntStrict("SPENTHP");
                 SpentBlueHP = lm.StateManager.GetIntStrict("SPENTBLUEHP");
@@ -129,6 +131,7 @@ namespace RandomizerMod.RC.StateVariables
             if (state.GetBool(Float))
             {
                 state.SetBool(Pfloat, true);
+                state.SetBool(NoPfloat, false);
             }
             state.SetBool(Float, false);
             state.SetBool(DiveFloat, false);
