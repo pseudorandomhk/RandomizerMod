@@ -143,6 +143,7 @@ namespace RandomizerMod.RC.StateVariables
 
         protected readonly StateBool NoFloat;
         protected readonly StateBool DiveFloat;
+        protected readonly StateBool NoDiveFloat;
         protected readonly Term Quake;
 
         public CanGetDiveFloatVariable(string name, LogicManager lm) : base(name, lm)
@@ -152,6 +153,7 @@ namespace RandomizerMod.RC.StateVariables
             {
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
+                NoDiveFloat = lm.StateManager.GetBoolStrict("noDIVEFLOAT");
                 Quake = lm.GetTermStrict("QUAKE");
 
                 if (InnerVariable.InnerVariable.SpellCasts.Length != 1 || InnerVariable.InnerVariable.SpellCasts[0] != 1)
@@ -185,6 +187,7 @@ namespace RandomizerMod.RC.StateVariables
                 {
                     innerState.SetBool(NoFloat, false);
                     innerState.SetBool(DiveFloat, true);
+                    innerState.SetBool(NoDiveFloat, false);
                     yield return innerState;
                 }
             }
@@ -211,7 +214,8 @@ namespace RandomizerMod.RC.StateVariables
         public const string Prefix = "$CONVERTDIVEFLOATTODIVEWALKOUT";
 
         protected readonly StateBool DiveFloat;
-        protected readonly StateBool DiveWalkOut;
+        protected readonly StateBool NoDiveFloat;
+        protected readonly StateBool NoDiveWalkOut;
         protected readonly StateBool NoFloat;
         protected readonly StateBool Pfloat;
 
@@ -221,7 +225,8 @@ namespace RandomizerMod.RC.StateVariables
             try
             {
                 DiveFloat = lm.StateManager.GetBoolStrict("DIVEFLOAT");
-                DiveWalkOut = lm.StateManager.GetBoolStrict("DIVEWALKOUT");
+                NoDiveFloat = lm.StateManager.GetBoolStrict("noDIVEFLOAT");
+                NoDiveWalkOut = lm.StateManager.GetBoolStrict("NODIVEWALKOUT");
                 NoFloat = lm.StateManager.GetBoolStrict("NOFLOAT");
                 Pfloat = lm.StateManager.GetBoolStrict("PFLOAT");
             }
@@ -247,7 +252,8 @@ namespace RandomizerMod.RC.StateVariables
             if (state.GetBool(DiveFloat))
             {
                 state.SetBool(DiveFloat, false);
-                state.SetBool(DiveWalkOut, true);
+                state.SetBool(NoDiveFloat, true);
+                state.SetBool(NoDiveWalkOut, false);
                 if (!state.GetBool(Pfloat)) state.SetBool(NoFloat, true);
             }
             yield return state;
@@ -269,14 +275,14 @@ namespace RandomizerMod.RC.StateVariables
         public override string Name { get; }
         public const string Prefix = "$REMOVEDIVEWALKOUT";
 
-        protected readonly StateBool DiveWalkOut;
+        protected readonly StateBool NoDiveWalkOut;
 
         public RemoveDiveWalkOutVariable(string name, LogicManager lm)
         {
             Name = name;
             try
             {
-                DiveWalkOut = lm.StateManager.GetBoolStrict("DIVEWALKOUT");
+                NoDiveWalkOut = lm.StateManager.GetBoolStrict("NODIVEWALKOUT");
             }
             catch (Exception e)
             {
@@ -297,7 +303,7 @@ namespace RandomizerMod.RC.StateVariables
 
         public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
         {
-            state.SetBool(DiveWalkOut, false);
+            state.SetBool(NoDiveWalkOut, false);
             yield return state;
         }
 

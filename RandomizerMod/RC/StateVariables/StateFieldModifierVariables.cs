@@ -11,8 +11,8 @@ namespace RandomizerMod.RC.StateVariables
             { "$FLOAT", "FLOAT" },
             { "$PFLOAT", "PFLOAT" },
             { "$noPFLOAT", "noPFLOAT" },
-            //{ "$DIVEFLOAT", "DIVEFLOAT" },
-            //{ "$DIVEWALKOUT", "DIVEWALKOUT" }
+            { "$DIVEFLOAT", "DIVEFLOAT" },
+            { "$noDIVEFLOAT", "noDIVEFLOAT" }
         };
 
         public override string Name { get; }
@@ -58,6 +58,50 @@ namespace RandomizerMod.RC.StateVariables
         public override IEnumerable<Term> GetTerms()
         {
             return Enumerable.Empty<Term>();
+        }
+    }
+
+    internal class DiveWalkoutVariable : StateModifier
+    {
+        public override string Name { get; }
+        protected readonly StateBool NoDiveWalkout;
+        public const string PREFIX = "$DIVEWALKOUT";
+
+        public DiveWalkoutVariable(string name, LogicManager lm)
+        {
+            Name = name;
+            try
+            {
+                NoDiveWalkout = lm.StateManager.GetBoolStrict("NODIVEWALKOUT");
+            }
+            catch (Exception e)
+            {
+                throw new InvalidOperationException("Error constructing DiveWalkoutVariable", e);
+            }
+        }
+
+        public static bool TryMatch(LogicManager lm, string term, out LogicVariable variable)
+        {
+            if (term == PREFIX)
+            {
+                variable = new DiveWalkoutVariable(term, lm);
+                return true;
+            }
+            variable = default;
+            return false;
+        }
+
+        public override IEnumerable<Term> GetTerms()
+        {
+            return Enumerable.Empty<Term>();
+        }
+
+        public override IEnumerable<LazyStateBuilder> ModifyState(object? sender, ProgressionManager pm, LazyStateBuilder state)
+        {
+            if (!state.GetBool(NoDiveWalkout))
+            {
+                yield return state;
+            }
         }
     }
 }

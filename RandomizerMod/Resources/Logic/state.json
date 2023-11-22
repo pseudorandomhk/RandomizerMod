@@ -18,7 +18,8 @@
       "PFLOAT",
       "noPFLOAT",
       "DIVEFLOAT",
-      "DIVEWALKOUT",
+      "noDIVEFLOAT",
+      "NODIVEWALKOUT",
       "NOPASSEDCHARMEQUIP",
       "CHARM1",
       "CHARM2",
@@ -173,7 +174,12 @@
     "DIVEFLOAT": {
         "BenchResetCondition": "NONE"
     },
-    "DIVEWALKOUT": {
+    "noDIVEFLOAT": {
+      "DefaultValue": true,
+      "BenchResetCondition": "NONE"
+    },
+    "NODIVEWALKOUT": {
+        "DefaultValue": true,
         "BenchResetCondition": "NONE"
     }
   },
@@ -190,8 +196,10 @@
         "NOFLOAT": true,
         "FLOAT": false,
         "PFLOAT": false,
+        "noPFLOAT": true,
         "DIVEFLOAT": false,
-        "DIVEWALKOUT": false
+        "noDIVEFLOAT": true,
+        "NODIVEWALKOUT": true
       }
     },
     "HotSpringResetState": {}

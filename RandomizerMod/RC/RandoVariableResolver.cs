@@ -40,6 +40,7 @@ namespace RandomizerMod.RC
             if (DiveWalkOutConversionVariable.TryMatch(lm, term, out variable)) return true;
             if (RemoveDiveWalkOutVariable.TryMatch(lm, term, out variable)) return true;
             if (StateFieldModifierVariable.TryMatch(lm, term, out variable)) return true;
+            if (DiveWalkoutVariable.TryMatch(lm, term, out variable)) return true;
 
             return false;
         }
