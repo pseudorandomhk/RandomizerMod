@@ -88,6 +88,11 @@ namespace RandomizerMod.Settings
                 "COMPLEXSKIPS" => GS.SkipSettings.ComplexSkips,
                 "DIFFICULTSKIPS" => GS.SkipSettings.DifficultSkips,
 
+                "AIRWALKJUMP" => GS.SkipSettings.AirwalkJumps,
+                "SUPERSLIDE" => GS.SkipSettings.Superslides,
+                "OOB" => GS.SkipSettings.OutOfBounds,
+                "JUMPFROMFLOOR" => GS.SkipSettings.JumpFromFloor,
+
                 "ITEMRANDO" => GS.TransitionSettings.Mode == TransitionSettings.TransitionMode.None,
                 "MAPAREARANDO" => GS.TransitionSettings.Mode == TransitionSettings.TransitionMode.MapAreaRandomizer,
                 "FULLAREARANDO" => GS.TransitionSettings.Mode == TransitionSettings.TransitionMode.FullAreaRandomizer,

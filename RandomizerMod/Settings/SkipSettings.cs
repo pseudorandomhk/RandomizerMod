@@ -19,6 +19,10 @@
         public bool ShriekPogos;
         public bool ComplexSkips;
         public bool DifficultSkips;
+        public bool AirwalkJumps;
+        public bool Superslides;
+        public bool OutOfBounds;
+        public bool JumpFromFloor;
         public override void Clamp(GenerationSettings gs)
         {
             base.Clamp(gs);
